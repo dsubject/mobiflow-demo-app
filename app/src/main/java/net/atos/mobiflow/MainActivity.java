@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -26,10 +27,12 @@ import com.topimagesystems.intent.CaptureIntent;
 import com.topimagesystems.intent.CaptureIntent.*;
 import com.topimagesystems.util.OcrValidationUtils;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.ContentType;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -37,6 +40,7 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -59,6 +63,10 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
 
     private HashMap<String,byte[]> image_data = new HashMap<String,byte[]>();
 
+    private EditText caseRef;
+    private EditText custId;
+    private EditText empId;
+
     private void resetImageData() {
         image_data = new HashMap<String,byte[]>();
     }
@@ -80,6 +88,10 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
         }
+
+        caseRef = (EditText) findViewById(R.id.case_ref);
+        custId  = (EditText) findViewById(R.id.cust_id);
+        empId   = (EditText) findViewById(R.id.emp_id);
 
         final Button btn_submit = (Button) this.findViewById(R.id.btn_submit);
         btn_submit.setOnClickListener(new View.OnClickListener() {
@@ -140,7 +152,8 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
     }
 
     private void doSubmit(View v) {
-        final String cdcUrl = "http://mobiflow-photo-upload.apps.eu01.cf.canopy-cloud.com/jaxrs/uploadimage";
+        //final String cdcUrl = "http://mobiflow-photo-upload.apps.eu01.cf.canopy-cloud.com/jaxrs/uploadimage";
+        final String cdcUrl = "http://csms-demo.atos.io/rome/uploadimage";
 
         final String CASE_REF = "case_ref";
         final String CUST_ID = "customer_id";
@@ -157,10 +170,10 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
             MultipartEntityBuilder entityBuilder = MultipartEntityBuilder.create();
             entityBuilder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
 
-            entityBuilder.addTextBody(CASE_REF, "123");
-            entityBuilder.addTextBody(CUST_ID, "ABC123");
-            entityBuilder.addTextBody(EMP_ID, "romeuser");
-            entityBuilder.addBinaryBody(FILE, image);
+            entityBuilder.addTextBody(CASE_REF, caseRef.getText().toString());
+            entityBuilder.addTextBody(CUST_ID, custId.getText().toString());
+            entityBuilder.addTextBody(EMP_ID, empId.getText().toString());
+            entityBuilder.addBinaryBody(FILE, image, ContentType.create("image/jpg"), COLOUR_FRONT+".jpg");
 
             HttpEntity entity = entityBuilder.build();
             //post.addHeader("Content-Type","multipart/form-data");
