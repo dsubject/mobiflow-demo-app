@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\menu_top_bottom.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\menu_top_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\view_fade_out.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\view_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\view_fade_in.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\view_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_stay.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_stay.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\dialog_exit.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\dialog_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\screen_exit.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\screen_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_up.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_up.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\dialog_enter.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\dialog_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\menu_bottom_top.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\menu_bottom_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\screen_enter.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\anim\\screen_enter.xml"
+    }
+]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="demoViewPagerIndicator">
+        <attr name="demoCirclePageIndicatorStyle" format="reference"/>
+        <attr name="demoTitlePageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="demoCirclePageIndicator">
+        <attr name="demoCentered" format="boolean" />
+        <attr name="demoFillColor" format="color" />
+        <attr name="demoPageColor" format="color" />
+        <attr name="demoOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="demoRadius" format="dimension" />
+        <attr name="demoSnap" format="boolean" />
+        <attr name="demoStrokeColor" format="color" />
+        <attr name="demoStrokeWidth" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <!-- enter here devices that will work on Stills  -->
+<string-array name="exception_devices_name_stills_only">
+
+</string-array>
+
+    <!-- enter here devices that has inverted cameras  -->
+    <string-array name="calculateVideoToScreenAspectRatio">
+
+        <item>All</item>
+    </string-array>
+
+    <!-- enter here devices that will work with cameraDPI2  -->
+    <string-array name="exception_devices_use_cameraAPI2">
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.topimagesystems"
+    android:versionCode="8"
+    android:versionName="4 (Alpha)" >
+
+
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false" />
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="24" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- android:debuggable="true" -->
+
+    <logback>
+        <configuration>
+            <appender
+                name="LOGCAT"
+                class="ch.qos.logback.classic.android.LogcatAppender" >
+                <tagEncoder>
+                    <pattern>
+%logger{0}
+
+
+                    </pattern>
+                </tagEncoder>
+
+                <encoder>
+                    <pattern>
+[%method] > %msg%n
+
+
+                    </pattern>
+                </encoder>
+            </appender>
+
+            <root level="TRACE" >
+                <appender-ref ref="LOGCAT" />
+            </root>
+        </configuration>
+    </logback>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application android:debuggable="true"></application>
+
+</manifest>

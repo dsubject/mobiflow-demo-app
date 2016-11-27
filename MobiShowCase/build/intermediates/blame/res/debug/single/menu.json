@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\menu\\option_button_menu.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\menu\\option_button_menu.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\menu\\mbck_main_menu.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\menu\\mbck_main_menu.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\menu\\zoom_image_menu.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\menu\\zoom_image_menu.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\menu\\main_menu.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\menu\\main_menu.xml"
+    }
+]

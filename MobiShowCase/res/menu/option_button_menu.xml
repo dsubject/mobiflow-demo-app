@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/resetToDefault"
+        android:title="Default settings"/>
+
+    <item
+        android:id="@+id/resetButtons"
+        android:title="Reset settings"/>
+
+    <item
+        android:id="@+id/sendButton"
+        android:title="Send Results"/>
+
+</menu>

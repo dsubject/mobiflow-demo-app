@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<style name="Theme.PageIndicatorDefaults" parent="android:Theme">-->
+        <!--<item name="demoCirclePageIndicatorStyle">@style/Widget.CirclePageIndicator</item>-->
+    <!--</style>-->
+
+    <!--<style name="Widget"></style>-->
+
+    <!--<style name="Widget.CirclePageIndicator" parent="Widget">-->
+        <!--<item name="demoCentered">@bool/default_circle_indicator_centered</item>-->
+        <!--<item name="demoFillColor">@color/default_circle_indicator_fill_color</item>-->
+        <!--<item name="demoPageColor">@color/default_circle_indicator_page_color</item>-->
+        <!--<item name="demoOrientation">@integer/default_circle_indicator_orientation</item>-->
+        <!--<item name="demoRadius">@dimen/default_circle_indicator_radius</item>-->
+        <!--<item name="demoSnap">@bool/default_circle_indicator_snap</item>-->
+        <!--<item name="demoStrokeColor">@android:color/transparent</item>-->
+    <!--</style>-->
+
+</resources>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.topimagesystems.controllers.imageanalyze.CameraOverlayLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.topimagesystems.camera2.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/captureOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/touchFocusView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FF0000" />
+
+        <com.topimagesystems.ui.CheckBounderiesView
+            android:id="@+id/checkBounderiesView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+
+        <com.topimagesystems.ui.DebugRectView
+            android:id="@+id/checkRectBounderies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            app:showCurrentRectangleFound="false" />
+
+        <com.topimagesystems.ui.Counter
+            android:id="@+id/counter"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/txtCapture"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            app:countDownStartValue="2"
+            app:countDownStopValue="0"
+            app:counterBackground="@color/counter_background"
+            app:counterBorderColor="@color/counter_border_color"
+            app:counterFont="BOLD"
+            app:counterTextColor="@android:color/white"
+            app:counterTextSize="48" />
+
+        <TextView
+            android:id="@+id/txtCapture"
+            style="@style/txtCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/TISFlowPleaseCaptureCheckFront" />
+
+        <TextView
+            android:id="@+id/txtIndicator"
+            style="@style/txtCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/semiTransparent" />
+
+        <TextView
+            android:id="@+id/txtHoldIndicator"
+            style="@style/txtCapture"
+            android:contentDescription="@string/TISFlowIndicatorHold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/semiTransparent" />
+
+        <!-- debug box -->
+
+        <LinearLayout
+            android:id="@+id/debugBox"
+            style="@style/txtDebugBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="140dp"
+            android:minWidth="65dp"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/txtX"
+                style="@style/txtDebugBox.text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..." />
+
+            <TextView
+                android:id="@+id/txtY"
+                style="@style/txtDebugBox.text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..." />
+
+            <TextView
+                android:id="@+id/txtZ"
+                style="@style/txtDebugBox.text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..." />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarMainView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <com.topimagesystems.ui.OneUnitLeveler
+            android:id="@+id/leveler"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/txtIndicator"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            app:isDraggingEnable="false"
+            app:isFadeOutEnable="true"
+            app:levelerThickness="7" />
+
+        <com.topimagesystems.ui.TwoUnitsLeveler
+            android:id="@+id/levelerHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            app:isDraggingEnable="false"
+            app:isFadeOutEnable="false"
+            app:levelerLocation="left" />
+
+        <com.topimagesystems.ui.TwoUnitsLeveler
+            android:id="@+id/levelerPortrait"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            app:isDraggingEnable="false"
+            app:isFadeOutEnable="false"
+            app:levelerLocation="top" />
+        
+        <com.topimagesystems.ui.ScaleLeveler
+            android:id="@+id/scaleLevelerHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            app:isDraggingEnable="false"
+            app:userColorsInScale="true"
+            app:isFadeOutEnable="false"
+            app:levelerThickness = "100"
+            app:levelerLocation="left" />
+
+        <com.topimagesystems.ui.ScaleLeveler
+            android:id="@+id/scaleLevelerVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            app:isDraggingEnable="false"
+            app:userColorsInScale="true"
+            app:isFadeOutEnable="false"
+            app:levelerLocation="top" />
+
+        <ToggleButton
+            android:id="@+id/btnTorch"
+            style="@style/torchSwitch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/TISAccessibilityTorchButton"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtErrorMessage"
+            style="@style/txtDebugBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footerBtnWrapper"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left|top"
+            android:padding="5dp"
+            android:text="..."
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgLogoWaterMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"            
+            android:background="@drawable/logo_watermark_white" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/TISAccessibilityCancelButton"
+            android:background="@drawable/cancel_button_gray" />
+
+        <Button
+            android:id="@+id/btnSample"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:background="@drawable/cancel_button" />
+
+        <LinearLayout
+            android:id="@+id/footerBtnWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnCapture"
+                style="@style/btnGeneral.camera"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/next" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Processing Overlay is shown during the image processing stage -->
+
+    <RelativeLayout
+        android:id="@+id/processingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/semiTransparent"
+        android:visibility="gone" >
+
+        <!-- android:background="@color/semiTransparent" -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/txtProcessing"
+                style="@style/txtProcessing"
+                android:layout_below="@+id/progressBar"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.topimagesystems.controllers.imageanalyze.CameraOverlayLayout>

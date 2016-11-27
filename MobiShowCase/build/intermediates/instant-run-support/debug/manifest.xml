@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.topimagesystems.sample"
+    android:installLocation="auto"
+    android:versionCode="102"
+    android:versionName="1.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+“
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="true" />
+
+    <!-- android:debuggable="true" -->
+    <logback>
+        <configuration>
+            <appender
+                name="LOGCAT"
+                class="ch.qos.logback.classic.android.LogcatAppender" >
+                <tagEncoder>
+                    <pattern>
+%logger{0}
+                    </pattern>
+                </tagEncoder>
+
+                <encoder>
+                    <pattern>
+[%method] > %msg%n
+                    </pattern>
+                </encoder>
+            </appender>
+
+            <root level="TRACE" >
+                <appender-ref ref="LOGCAT" />
+            </root>
+        </configuration>
+    </logback>
+
+    <application
+        name="com.topimagesystems.sample.MobiSampleApplication"
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:enabled="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <activity
+            android:name="com.topimagesystems.sample.ShowCaseActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.topimagesystems.controllers.imageanalyze.CameraManagerController"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.topimagesystems.controllers.imageanalyze.CameraController"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="false" >
+        </activity>
+        <activity
+            android:name="com.topimagesystems.controllers.imageanalyze.DynamicCaptureCameraController"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="false" >
+        </activity>
+        <activity android:name="com.topimagesystems.sample.ui.ShowImagesGallery" >
+        </activity>
+        <activity android:name="com.topimagesystems.sample.ui.ZoomViewActivity" >
+        </activity>
+        <activity
+            android:name="com.topimagesystems.ui.InfoScreenActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.topimagesystems.sample.controller.IQASettingsController"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+    </application>
+
+</manifest>

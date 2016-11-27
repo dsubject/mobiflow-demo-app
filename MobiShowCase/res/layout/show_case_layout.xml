@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkg" >
+
+    <include
+        android:id="@+id/demoActionBar_ref"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar" />
+
+    <!-- content -->
+
+    <ScrollView
+        android:id="@+id/scrollBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/demoActionBar_ref"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <!-- MICR -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/txtImageType"
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/ImageType" />
+
+                <Spinner
+                    android:id="@+id/inputType"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <!-- MICR -->
+
+            <RelativeLayout
+                android:id="@+id/MicrLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/txtMICR"
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/OCRType" />
+
+                <Spinner
+                    android:id="@+id/cpMICR"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/levelerLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/txtLeveler"
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/levelerType" />
+
+                <Spinner
+                    android:id="@+id/levlerType"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seekBarLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/tisbinTypeId"
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/TISBinType" />
+
+                <Spinner
+                    android:id="@+id/binarizationTypeSpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:id="@+id/binarizationTextViewSeekBar"
+                    style="@style/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/binarizationTypeSpinner"
+                    android:layout_marginTop="10dp" />
+
+                <SeekBar
+                    android:id="@+id/binarizationSeekBar"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/binarizationTypeSpinner"
+                    android:max="100" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apectRatioMaxLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/aspectRatioMax" />
+
+                <EditText
+                    android:id="@+id/apectRatioMaxEt"
+                    style="@style/txtBox"
+                    android:layout_width="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apectRatioMinLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/aspectRatioMin" />
+
+                <EditText
+                    android:id="@+id/apectRatioMinEt"
+                    style="@style/txtBox"
+                    android:layout_width="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/heigthLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/heigth" />
+
+                <EditText
+                    android:id="@+id/heigthEt"
+                    style="@style/txtBox"
+                    android:layout_width="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/widthLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/width" />
+
+                <EditText
+                    android:id="@+id/widthEt"
+                    style="@style/txtBox"
+                    android:layout_width="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/txtValidFromLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/txtValidFrom" />
+
+                <EditText
+                    android:id="@+id/txtValidFrom"
+                    style="@style/txtBox"
+                    android:layout_width="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberSigned"
+                    android:text="17" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/txtValidToLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/txtValidTo" />
+
+                <EditText
+                    android:id="@+id/txtValidTo"
+                    style="@style/txtBox"
+                    android:layout_width="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberSigned"
+                    android:text="50" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/portraitModeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/portraitMode" />
+
+                <ToggleButton
+                    android:id="@+id/btnPortraitMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <!-- debug -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/debugMode" />
+
+                <ToggleButton
+                    android:id="@+id/btnDebugMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dynamiCaptureLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/dynamicCapture" />
+
+                <ToggleButton
+                    android:id="@+id/dynamicCaptureBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <!-- IQA -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/enableIQA" />
+
+                <ToggleButton
+                    android:id="@+id/btnEnableIQA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <!-- max number of retries -->
+
+            <RelativeLayout
+                android:id="@+id/infoScreenLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/infoScreenTxt" />
+
+                <ToggleButton
+                    android:id="@+id/infoScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/showGuideLinesIndicatorsTxt" />
+
+                <ToggleButton
+                    android:id="@+id/showGuideLinesIndicators"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="true"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/shouldOutputOriginalImageTxt" />
+
+                <ToggleButton
+                    android:id="@+id/shouldOutputOriginalImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/createGrayScaleLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/createGrayscale" />
+
+                <ToggleButton
+                    android:id="@+id/createGrayScale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutGrayScaleImageCompression"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textViewGrayScaleImageCaption"
+                    style="@style/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_toLeftOf="@+id/seekBarGrayScaleImageCompression"
+                    android:text="@string/GrayScaleImageCompressionLabel" />
+
+                <TextView
+                    android:id="@+id/textViewGrayScaleImageCompression"
+                    style="@style/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textViewGrayScaleImageCaption" />
+
+                <SeekBar
+                    android:id="@+id/seekBarGrayScaleImageCompression"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:max="100"
+                    android:progress="100" />
+            </RelativeLayout>
+            
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/shouldOutputColoredImageTxt" />
+
+                <ToggleButton
+                    android:id="@+id/shouldOutputColoredImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutColorImageCompression"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textViewColorImageCaption"
+                    style="@style/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_toLeftOf="@+id/seekBarColorImageCompression"
+                    android:text="@string/ColoredImageCompressionLabel" />
+
+                <TextView
+                    android:id="@+id/textViewColorImageCompression"
+                    style="@style/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textViewColorImageCaption" />
+
+                <SeekBar
+                    android:id="@+id/seekBarColorImageCompression"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:max="100"
+                    android:progress="100" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/shouldOutputBWImageTxt" />
+
+                <ToggleButton
+                    android:id="@+id/shouldOutputBWImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/testMode" />
+
+                <ToggleButton
+                    android:id="@+id/isTestMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/frontOnly" />
+
+                <ToggleButton
+                    android:id="@+id/scanFrontOnlyBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="false" >
+
+                    <!-- max number of retries -->
+                </ToggleButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/backOnly" />
+
+                <ToggleButton
+                    android:id="@+id/scanBackOnlyBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="false" >
+                </ToggleButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/enableCountDownSoundTxt" />
+
+                <ToggleButton
+                    android:id="@+id/enableCountDownSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/showCountDownTxt" />
+
+                <ToggleButton
+                    android:id="@+id/showCountDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/customViewTxt" />
+
+                <ToggleButton
+                    android:id="@+id/customView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/multiCapture" />
+
+                <ToggleButton
+                    android:id="@+id/multiCaptureButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/videoModeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/videoMode" />
+
+                <ToggleButton
+                    android:id="@+id/videoMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/softCaptureLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/softCapture" />
+
+                <ToggleButton
+                    android:id="@+id/btnSoftCapture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layoutSoftCaptureThreshold"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textViewSoftCaptureThresholdCaption"
+                    style="@style/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_toLeftOf="@+id/seekBarSoftCaptureThreshold"
+                    android:text="@string/SoftCaptureThresholdLabel" />
+
+                <TextView
+                    android:id="@+id/textViewSoftCaptureThreshold"
+                    style="@style/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textViewSoftCaptureThresholdCaption" />
+
+                <SeekBar
+                    android:id="@+id/seekBarSoftCaptureThreshold"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:max="100"
+                    android:progress="100" />
+            </RelativeLayout>
+
+
+            <!-- max number of retries -->
+
+            <LinearLayout
+                android:id="@+id/blurDetectionLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/txtLabel"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/BlurDetection" />
+
+                    <ToggleButton
+                        android:id="@+id/btnBlurDetection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:checked="false" />
+
+                    <!-- max number of retries -->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/blurOnBack"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/blurOnBackTxt" />
+
+                <ToggleButton
+                    android:id="@+id/blurOnBackToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/barcodeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/enableBarcodeDetection" />
+
+                <ToggleButton
+                    android:id="@+id/enableBarcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/barcodeQRLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/enableQRCode" />
+
+                <ToggleButton
+                    android:id="@+id/enableQRCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/maxResolutionLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/enableMaxResolutionCapture" />
+
+                <ToggleButton
+                    android:id="@+id/enableMaxResolutionBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="false" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tapToFocusLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/enableTapToFocus" />
+
+                <ToggleButton
+                    android:id="@+id/enableTapToFocusBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:checked="false" />
+            </RelativeLayout>
+            
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/usecameraAPI2"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--style="@style/txtLabel"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/usecameraAPI2" />-->
+
+                <!--<ToggleButton-->
+                    <!--android:id="@+id/useCameraAPI2Btn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:checked="false" />-->
+            <!--</RelativeLayout>-->
+
+
+            <Button
+                android:id="@+id/btnConfirm"
+                style="@style/btnGeneral"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/TisCapture" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\right_tab_selected.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\drawable-hdpi\\right_tab_selected.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\action_bar.9.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\drawable-hdpi\\action_bar.9.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_navigation_selected.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\drawable-hdpi\\btn_navigation_selected.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_navigation_menu.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\drawable-hdpi\\btn_navigation_menu.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_navigation_menu_selected.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\drawable-hdpi\\btn_navigation_menu_selected.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\drawable-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\drawable-hdpi\\ic_launcher.png"
+    }
+]

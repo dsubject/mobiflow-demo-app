@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\mbck_main_camera.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\mbck_main_camera.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\session_images.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\layout\\session_images.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\mbck_camera_manager_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\mbck_camera_manager_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\viewpaper_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\viewpaper_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\layout\\actionbar.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\iqa_settings_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\layout\\iqa_settings_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\show_case_container_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\layout\\show_case_container_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\show_case_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\layout\\show_case_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\image_grid_item.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\layout\\image_grid_item.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\mbck_help_page_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\mbck_help_page_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\custom_mbck_camera_manager_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\custom_mbck_camera_manager_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\custom_mbck_camera_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\custom_mbck_camera_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\run_ocr_library.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\run_ocr_library.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\info_screen.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\info_screen.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\activity_camera.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\dynmaic_capture_overlay.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\dynmaic_capture_overlay.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\zoom_image_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\layout\\zoom_image_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\empty_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\layout\\empty_layout.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\layout\\mbck_camera_layout.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\layout\\mbck_camera_layout.xml"
+    }
+]

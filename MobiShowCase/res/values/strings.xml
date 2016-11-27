@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- IQA Settings -->
+    <string name="Corner">Corner</string>
+    <string name="Front">Front</string>
+    <string name="UpperLeft">Upper left:</string>
+    <string name="UpperRight">Upper Right:</string>
+    <string name="Width">width:</string>
+    <string name="Height">height:</string>
+    <string name="area">area:</string>
+    <string name="LowerLeft">Lower Left:</string>
+    <string name="LowerRight">Lower Right:</string>
+    <string name="Edge">Edge</string>
+    <string name="Top">Top:</string>
+    <string name="Bottom">Bottom:</string>
+    <string name="Left">Left:</string>
+    <string name="Right">Right:</string>
+    <string name="Skew">Skew</string>
+    <string name="max_skew">max skew:</string>
+    <string name="Darkness">Darkness</string>
+    <string name="ImageFilesize">Image filesize [kb]</string>
+    <string name="Back">Back</string>
+    <string name="showImages">Show Images</string>
+    <string name="max">max:</string>
+    <string name="min">min:</string>
+    <string name="Spots">Spots</string>
+    <string name="maxSpots">max spots:</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="app_name">MobiFlow</string>
+    <string name="Menu">Menu</string>
+    <string name="domain">"Domain</string>
+    <string name="debugMode">Debug Mode</string>
+    <string name="offlineMode">Offline Mode</string>
+    <string name="enableIQA">Enable IQA</string>
+    <string name="useEncryption">Use Encryption</string>
+    <string name="createGrayscale">Show Grayscale Image</string>
+    <string name="validLength">Valid length of digital row</string>
+    <string name="from">From</string>
+    <string name="infoScreenTxt">Info Screen Enabled</string>
+    <string name="showGuideLinesIndicatorsTxt">Show Guidelines Indicators</string>
+    <string name="shouldOutputOriginalImageTxt">Should Output Original Image</string>
+    <string name="shouldOutputColoredImageTxt">Should Output Colored Image</string>
+    <string name="shouldOutputBWImageTxt">Should Output Binary Image</string>
+    <string name="testMode">Test Mode</string>
+    <string name="enableCountDownSoundTxt">Enable Countdown Sound</string>
+    <string name="videoMode">Video Mode</string>
+    <string name="enableBarcodeDetection">Enable Bar-Code Detection</string>
+    <string name="enableQRCode">Enable QR-Code</string>
+    <string name="enableMaxResolutionCapture">Enable Stills Max Resolution</string>
+    <string name="usecameraAPI2">Use Camera API2</string>
+    <string name="enableTapToFocus">Enable Tap To Focus</string>
+
+    <string name="customViewTxt">Custom View</string>
+    <string name="multiCapture">Multi Page</string>
+    <string name="showInstructionsSlides">Show Instructions Slides</string>
+    <string name="to">To</string>
+    <string name="frontOnly">Scan Front Only</string>
+    <string name="backOnly">Scan Back Only</string>
+    <string name="portraitMode">Portrait Mode</string>
+    <string name="dynamicCapture">Dynamic Capture</string>
+    <string name="maximumRetries">Maximum number of retries</string>
+    <string name="aspectRatioMax">Aspect Ratio Max</string>
+    <string name="aspectRatioMin">Aspect Ratio Min</string>
+    <string name="hwRatio">Height/Width ratio</string>
+    <string name="width">Width</string>
+    <string name="heigth">Height</string>
+    <string name="MICR">MICR</string>
+    <string name="OCRType">OCR Type</string>
+    <string name="confirm">Start Test</string>
+    <string name="TisCapture">Capture</string>
+    <string name="off">Off</string>
+    <string name="E138B">E13B</string>
+    <string name="CMC7">CMC7</string>
+    <string name="OCRA">OCRA</string>
+    <string name="PAN">PAN</string>
+    <string name="MRZ">MRZ</string>
+    <string name="UnknownMicr">Unknown</string>
+    <string name="BlurDetection">Blur Detection</string>
+    <string name="BinarizationType">Binarization</string>
+    <string name="ImageType">Image Type</string>
+    <string name="Payment">Payment</string>
+    <string name="Check">Check</string>
+    <string name="Document">Document</string>
+    <string name="Custom">Custom</string>
+    <string name="Passport">Passport</string>
+    <string name="Card">Card</string>
+    <string name="Check_text">Check</string>
+    <string name="one_unit_levler">One Unit</string>
+    <string name="two_unit_levler">Two Units</string>
+    <string name="scale_levler">Scale</string>
+    <string name="none_levler">none</string>
+    <string name="Payment_text">Bill Payment</string>
+    <string name="Document_text">Full Page</string>
+    <string name="Username">User Name</string>
+    <string name="Password">Password</string>
+    <string name="showCountDownTxt">Show Countdown</string>
+    <string name="TISGeneralBinarization">General</string>
+    <string name="TISCheckBinarization">Check</string>
+    <string name="Identifier">Identifier</string>
+    <string name="Login">Login</string>
+    <string name="IAgree">I agree to the application\'s</string>
+    <string name="PleaseTypeCredentails">Please type your credentials to login</string>
+    <string name="YouShouldAgreeToTerms">You should agree to the terms of service to login</string>
+    <string name="Analyzing">Analyzing</string>
+    <string name="Settings">Settings</string>
+    <string name="ShowCase">TISShowCase</string>
+    <string name="IQASettings">IQA Settings</string>
+    <string name="Instructions">Instructions</string>
+    <string name="IQA">IQA</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="CheckDepositInfo">Check Deposit Info</string>
+    <string name="Logout">Logout</string>
+    <string name="SignOff">Sign Off</string>
+    <string name="Deposit">Deposit</string>
+    <string name="DepositDetails">Deposit Details</string>
+    <string name="Deposits">Deposits</string>
+    <string name="Accounts">Accounts</string>
+    <string name="Camera">Camera</string>
+    <string name="Edit">Edit</string>
+    <string name="WhatisMobiCheck">What is MobiCheck?</string>
+    <string name="Done">Done</string>
+    <string name="Skip">Skip</string>
+    <string name="Retry">Retry</string>
+    <string name="FetchingSettings">Retrieving settings from the server&#8230; please wait</string>
+    <string name="FailedFetchingSettings">Failed to retrieve settings from the server. Do you want to retry?</string>
+    <string name="MandatoryEmailPassword">Please enter identifier or password</string>
+    <string name="MandatoryAmount">Please enter check amount</string>
+    <string name="ErrorAmountNotNumeric">Amount should be numeric</string>
+    <string name="MandatoryAccount">Please choose an account</string>
+    <string name="Front_tiff">Front Black &amp; White </string>
+    <string name="Front_gray">Front Grayscale </string>
+    <string name="Front_original">Front Original Colored </string>
+    <string name="Front_colored">Front Cropped Colored </string>
+    <string name="Back_tiff">Back Black &amp; White </string>
+    <string name="Back_gray">Back Grayscale </string>
+    <string name="Back_original">Back Original Colored </string>
+    <string name="Back_colored">Back Cropped Colored </string>
+    <string name="TISBinType">Binarization Type </string>
+    <string name="softCapture">Soft Capture</string>
+    <string name="ColoredImageCompressionLabel">Colored Image </string>
+    <string name="ColoredImageCompressionValue">Compression: %.2f/1.0</string>
+    <string name="GrayScaleImageCompressionLabel">Grayscale Image </string>
+    <string name="GrayScaleImageCompressionValue">Compression: %.2f/1.0</string>
+    <string name="SoftCaptureThresholdLabel">Soft Capture </string>
+    <string name="SoftCaptureThresholdValue">Threshold: %.2f/1.0</string>
+    <string name="blurOnBackTxt">Blur on back side</string>
+    <string name="BinarizationThresholdValue">Threshold: %.2f/1.0</string>
+
+
+    <!-- instructions -->
+    <string name="IntroToMobiCheck">Introduction to MobiCheck</string>
+    <string name="Instructions0">Easily deposit checks from wherever you are, using your mobile device.</string>
+    <string name="Instructions1">Once you have installed MobiCheck on your mobile device, you will be able to deposit all your checks using the mobile device.</string>
+    <string name="Instructions2">The MobiCheck application will activate the rear camera on your mobile device and guide you through the next steps. Point the camera at the front face of the check and the application will provide hints on how to best position the camera to capture an optimal image. Once the optimal position has been obtained the application will snap the picture automatically. You will be asked to repeat this process to snap a picture of the back of the check as well.</string>
+    <string name="Instruction3">Capture the front and back faces of the check</string>
+    <string name="EnterAmountPreffix">Enter the amount that appears on the check:</string>
+    <string name="EnterAmountSuffix">and you\'re done!</string>
+    <string name="txtValidTo">MICR Length Valid To</string>
+    <string name="txtValidFrom">MICR Length Valid From</string>
+    <string name="levelerType">Leveler Type</string>
+
+    <!-- send check -->
+    <string name="SendCheckConfirm">Are you sure you want to deposit the check now?</string>
+    <string name="EnterCheckAmount">Enter the amount that appears on the check:</string>
+    <string name="EnterReferenceNumber">Enter the reference number (optional):</string>
+    <string name="ChooseAccount">Choose an account:</string>
+    <string name="Send">Send</string>
+    <string name="Confirmation">Confirmation</string>
+
+    <!-- deposit details fields -->
+    <string name="Account">Account</string>
+    <string name="Date">Date</string>
+    <string name="Amount">Amount</string>
+    <string name="Reference">Reference</string>
+    <string name="Status">Status</string>
+
+    <!-- status -->
+    <string name="StatusSent">Sent</string>
+    <string name="StatusPending">Pending</string>
+    <string name="StatusSuccessful">Successful</string>
+    <string name="StatusError">Error</string>
+    <string name="StatusNA">Not Available</string>
+
+    <!-- new values -->
+    <string name="next">Capture</string>
+    <string name="error">Error</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="errorNetworkUnavailable">Network error: failed to establish connection with the server. Make sure your domain is correct and the server is running.</string>
+    <string name="errorPositiveNumber">Please enter a positive number</string>
+    <string name="errorInvalidRange">Not valid range</string>
+    <string name="errorDomain">Please enter a valid domain</string>
+    <string name="manualCaptureMode">Manual Capture</string>
+    <!--  -->
+
+
+    <!-- camera errors -->
+    <string name="failedToTakePicture">Failed to take a picture</string>
+    <string name="failedConnectToCamera">Fail to connect to camera service</string>
+
+    <!--  -->
+
+</resources>

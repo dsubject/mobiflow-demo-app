@@ -1,0 +1,156 @@
+#for MobiFlow.jar obfuscation only
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontwarn com.topimagesystems.R*
+-injars libs/MobiFlow.jar
+-libraryjars ../openCV-2.4.11/bin/openCV-2.4.11.jar
+-libraryjars libs/Zxing.jar
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+#-dontshrink
+#-dontoptimize
+#-dontpreverify
+-keepattributes Exceptions,InnerClasses
+-keep class org.apache.3rdparty.stuff.**
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends com.topimagesystems.controllers.BaseController
+
+-keep class com.topimagesystems.micr.MobiCHECKOCR{ *; }
+-keep class com.topimagesystems.intent.CaptureIntent.TISDocumentType.**{ *; }
+-keep class com.topimagesystems.intent.CaptureIntent.**{ *; }
+-keep class com.topimagesystems.controllers.imageanalyze.CameraTypes.**{ *; }
+-keep class com.topimagesystems.Common.**{ *; }
+-keep class com.topimagesystems.micr.**{ *; }
+-keep class com.topimagesystems.micr.JavaNotifier.**{ *; }
+
+-keep class com.topimagesystems.util.**{ *; }
+-keep class com.topimagesystems.intent.**{ *; }
+-keep class com.topimagesystems.controllers.imageanalyze.**{ *; }
+-keep class com.topimagesystems.data.SessionResultParams.**{ *; }
+-keep class com.topimagesystems.data.**{ *; }
+-keep class com.topimagesystems.controllers.NavigationManager.**{ *; }
+-keep class com.topimagesystems.controllers.BaseController.**{ *; }
+-keep class com.topimagesystems.controllers.IQASettingsIntent.**{ *; }
+
+
+-keep interface com.topimagesystems.controllers.imageanalyze.CameraManagerController.TISMobiFlowMessages.**{ *; }
+
+
+
+
+-keepclassmembers class com.topimagesystems.intent.** { void *(...); }
+-keepclassmembers class com.topimagesystems.intent.CaptureIntent.** { void *(...); }
+-keepclassmembers class com.topimagesystems.micr.** { void *(...); }
+
+-keepclassmembers class com.topimagesystems.data.** { void *(...); }
+-keepclassmembers class com.topimagesystems.controllers.NavigationManager.** { void *(...); }
+
+-keepclassmembers class com.topimagesystems.controllers.imageanalyze.** { void *(...); }
+-keepclassmembers class com.topimagesystems.controllers.imageanalyze.CameraTypes.** { void *(...); }
+-keepclassmembers class com.topimagesystems.Common.** { void *(...); }
+
+-keepclassmembers  class com.topimagesystems.micr.JavaNotifier.** { void *(...); }
+#-keepclassmembers class com.topimagesystems.data.SessionResultParams.** { void *(...); }
+
+
+
+
+
+#-keepclassmembers class com.topimagesystems.controllers.imageanalyze.CameraTypes.CustomUICallbackMessage.**{ *; }
+#-keepclassmembers class com.topimagesystems.controllers.imageanalyze.CameraTypes.TISFlowGeneralMessages.**{ *; }
+#-keepclassmembers class com.topimagesystems.controllers.imageanalyze.CameraTypes.TISFlowInputMessages.**{ *; }
+#-keepclassmembers class com.topimagesystems.controllers.imageanalyze.CameraTypes.TISScanBarcodeLocation.**{ *; }
+#-keepclassmembers interface com.topimagesystems.controllers.imageanalyze.CameraManagerController.TISMobiFlowMessages.**{ *; }
+
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+-keep public enum com.topimagesystems.intent.CaptureIntent.TISDocumentType$** {
+    **[] $VALUES;
+    public *;
+}
+-keep public enum com.topimagesystems.intent.CaptureIntent.LevelerType$** {
+    **[] $VALUES;
+    public *;
+}
+
+-keep public enum com.topimagesystems.intent.CaptureIntent.SessionType$** {
+    **[] $VALUES;
+    public *;
+}
+-keep public enum com.topimagesystems.controllers.imageanalyze.CameraTypes.TISFlowUXType$** {
+    **[] $VALUES;
+    public *;
+}
+
+-keep public enum com.topimagesystems.controllers.imageanalyze.CameraTypes.TISBinarizationType$** {
+    **[] $VALUES;
+    public *;
+}
+-keep public enum com.topimagesystems.controllers.imageanalyze.CameraTypes.OCRType$** {
+    **[] $VALUES;
+    public *;
+}
+-keep public enum com.topimagesystems.controllers.imageanalyze.CameraTypes.TISScanBarcodeLocation$** {
+    **[] $VALUES;
+    public *;
+}
+
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+
+-keepclasseswithmembers class com.topimagesystems.controllers.imageanalyze.CameraManagerController* {
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public static <int[]> frontImageRectArray;
+     public static <SessionType> sessionType;
+}
+-keepclasseswithmembers class com.topimagesystems.data.SessionResultParams* {
+    public static <java.lang.byte[]> tiffFront;
+    public static <java.lang.byte[]> jpegBWFront;
+    public static <java.lang.byte[]> grayscaleFront;
+    public static <java.lang.byte[]> colorFront;
+    public static <byte[]> originalFront;
+    public static <byte[]> tiffBack;
+    public static <byte[]> jpegBWBack;
+    public static <byte[]> grayscaleBack;
+    public static <byte[]> colorBack;
+    public static <byte[]> originalBack;
+    public <java.lang.String[]> getOcrParams();
+    public <java.lang.String> getFrontImagePath(); 
+}
+ -keepclassmembers class * implements android.os.Parcelable {
+      public static final android.os.Parcelable$Creator *;
+   }
+ 
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}

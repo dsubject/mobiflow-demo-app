@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\view_fade_out.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\view_fade_out.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\dialog_exit.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\dialog_exit.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\bottom_top.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\anim\\bottom_top.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_up.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\slide_in_up.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\menu_top_bottom.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\menu_top_bottom.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_up.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\slide_out_up.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\slide_stay.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\slide_stay.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\menu_bottom_top.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\menu_bottom_top.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\view_fade_in.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\view_fade_in.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\screen_exit.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\screen_exit.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\dialog_enter.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\dialog_enter.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\layout_bottom_to_top_slide.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\res\\anim\\layout_bottom_to_top_slide.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\anim\\screen_enter.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\anim\\screen_enter.xml"
+    }
+]

@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="calculateVideoToScreenAspectRatio">
+
+        <item>All</item>
+    </string-array>
+    <string-array name="exception_devices_name_stills_only">
+
+</string-array>
+    <string-array name="exception_devices_use_cameraAPI2">
+
+    </string-array>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="bitTransparent">#D2000000</color>
+    <color name="camera_capture_color">#FFFFFF</color>
+    <color name="camera_counter_text_color">#FFFFFF</color>
+    <color name="camera_overlay_color">#90000000</color>
+    <color name="control_background">#cc4285f4</color>
+    <color name="counter_background">#FFD92420</color>
+    <color name="counter_border_color">#FFFFFF</color>
+    <color name="default_circle_indicator_fill_color">#ffffff</color>
+    <color name="default_circle_indicator_page_color">#ffffff</color>
+    <color name="default_circle_indicator_stroke_color">#ff2200</color>
+    <color name="grid_line_color">#50FFFFFF</color>
+    <color name="infoScreenBackground">#C8EBEBEB</color>
+    <color name="invalidRectFillColor">#50F02B46</color>
+    <color name="invalidRectStrokeColor">#FFD60A16</color>
+    <color name="invalid_value">#ffff0000</color>
+    <color name="light_gray">#C0C0C0</color>
+    <color name="listBkg_default">#fff</color>
+    <color name="listBkg_pressed">#edeceb</color>
+    <color name="listDivider">#363636</color>
+    <color name="nav_menu_bkg">#ffebebeb</color>
+    <color name="nav_menu_bkg_selected">#ffd92429</color>
+    <color name="nav_menu_box_bkg">#959595</color>
+    <color name="semiTransparent">#90000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="txtGeneral">#FFFFFFFF</color>
+    <color name="validRectFillColor">#60B9DE93</color>
+    <color name="validRectStrokeColor">#FF82BE37</color>
+    <color name="valid_value">#ff00ff00</color>
+    <color name="walkthrough_background">#E6E7E7</color>
+    <declare-styleable name="CirclePageIndicator"><attr format="boolean" name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr format="dimension" name="strokeWidth"/></declare-styleable>
+    <declare-styleable name="OneUnitsLeveler"><attr format="boolean" name="isFadeOutEnable"/><attr format="boolean" name="isDraggingEnable"/><attr format="integer" name="levelerThickness"/></declare-styleable>
+    <declare-styleable name="ScaleLeveler"><attr format="dimension" name="scaleUnitGap"/><attr format="boolean" name="userColorsInScale"/></declare-styleable>
+    <declare-styleable name="TwoUnitsLeveler"><attr format="dimension" name="paddingLeftAndRight"/><attr format="dimension" name="paddingTopAndBottom"/><attr format="integer" name="levelerLocation">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/></declare-styleable>
+    <declare-styleable name="captureOverlay"><attr format="boolean" name="drawGreenRectangle"/><attr format="boolean" name="showCurrentRectangleFound"/></declare-styleable>
+    <declare-styleable name="counter"><attr format="reference" name="counterBorderColor"/><attr format="reference" name="counterBackground"/><attr format="reference" name="counterTextColor"/><attr format="integer" name="counterTextSize"/><attr format="integer" name="countDownStartValue"/><attr format="integer" name="countDownStopValue"/><attr format="string" name="counterFont"/></declare-styleable>
+    <declare-styleable name="demoCirclePageIndicator"><attr format="boolean" name="demoCentered"/><attr format="color" name="demoFillColor"/><attr format="color" name="demoPageColor"/><attr name="demoOrientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr><attr format="dimension" name="demoRadius"/><attr format="boolean" name="demoSnap"/><attr format="color" name="demoStrokeColor"/><attr format="dimension" name="demoStrokeWidth"/></declare-styleable>
+    <declare-styleable name="demoViewPagerIndicator"><attr format="reference" name="demoCirclePageIndicatorStyle"/><attr format="reference" name="demoTitlePageIndicatorStyle"/></declare-styleable>
+    <dimen name="actionBarHeight">45dp</dimen>
+    <dimen name="actionBarPadding">2dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="btnActionBarPadding">5dp</dimen>
+    <dimen name="btnCameraPadding">1dp</dimen>
+    <dimen name="btnPadding">5dp</dimen>
+    <dimen name="defaultFontSize">16sp</dimen>
+    <dimen name="default_circle_indicator_radius">5dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <integer name="customLongAnimation">600</integer>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="dynamicCaptureStrokeWith">3</integer>
+    <integer name="max_barcode_tries">13</integer>
+    <integer name="minimumHeightForVideoCapture">1080</integer>
+    <integer name="minimumWidthForVideoCapture">1920</integer>
+    <integer name="stillHeightResolution">0</integer>
+    <integer name="stillWidthResolution">0</integer>
+    <integer name="videoHeightResolution">0</integer>
+    <integer name="videoWidthResolution">0</integer>
+    <string name="Account">Account</string>
+    <string name="Accounts">Accounts</string>
+    <string name="Amount">Amount</string>
+    <string name="Analyzing">Analyzing</string>
+    <string name="Back">Back</string>
+    <string name="Back_colored">Back Cropped Colored </string>
+    <string name="Back_gray">Back Grayscale </string>
+    <string name="Back_original">Back Original Colored </string>
+    <string name="Back_tiff">Back Black &amp; White </string>
+    <string name="BinarizationThresholdValue">Threshold: %.2f/1.0</string>
+    <string name="BinarizationType">Binarization</string>
+    <string name="BlurDetection">Blur Detection</string>
+    <string name="Bottom">Bottom:</string>
+    <string name="CMC7">CMC7</string>
+    <string name="Camera">Camera</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Card">Card</string>
+    <string name="Check">Check</string>
+    <string name="CheckDepositInfo">Check Deposit Info</string>
+    <string name="Check_text">Check</string>
+    <string name="ChooseAccount">Choose an account:</string>
+    <string name="CloseInfoScreenButton">"Close"</string>
+    <string name="ColoredImageCompressionLabel">Colored Image </string>
+    <string name="ColoredImageCompressionValue">Compression: %.2f/1.0</string>
+    <string name="Confirmation">Confirmation</string>
+    <string name="Corner">Corner</string>
+    <string name="Custom">Custom</string>
+    <string name="Darkness">Darkness</string>
+    <string name="Date">Date</string>
+    <string name="Deposit">Deposit</string>
+    <string name="DepositDetails">Deposit Details</string>
+    <string name="Deposits">Deposits</string>
+    <string name="Document">Document</string>
+    <string name="Document_text">Full Page</string>
+    <string name="Done">Done</string>
+    <string name="E138B">E13B</string>
+    <string name="Edge">Edge</string>
+    <string name="Edit">Edit</string>
+    <string name="EnterAmountPreffix">Enter the amount that appears on the check:</string>
+    <string name="EnterAmountSuffix">and you\'re done!</string>
+    <string name="EnterCheckAmount">Enter the amount that appears on the check:</string>
+    <string name="EnterReferenceNumber">Enter the reference number (optional):</string>
+    <string name="ErrorAmountNotNumeric">Amount should be numeric</string>
+    <string name="FailedFetchingSettings">Failed to retrieve settings from the server. Do you want to retry?</string>
+    <string name="FetchingSettings">Retrieving settings from the server… please wait</string>
+    <string name="Front">Front</string>
+    <string name="Front_colored">Front Cropped Colored </string>
+    <string name="Front_gray">Front Grayscale </string>
+    <string name="Front_original">Front Original Colored </string>
+    <string name="Front_tiff">Front Black &amp; White </string>
+    <string name="GrayScaleImageCompressionLabel">Grayscale Image </string>
+    <string name="GrayScaleImageCompressionValue">Compression: %.2f/1.0</string>
+    <string name="Height">height:</string>
+    <string name="IAgree">I agree to the application\'s</string>
+    <string name="IQA">IQA</string>
+    <string name="IQASettings">IQA Settings</string>
+    <string name="Identifier">Identifier</string>
+    <string name="ImageFilesize">Image filesize [kb]</string>
+    <string name="ImageType">Image Type</string>
+    <string name="Instruction3">Capture the front and back faces of the check</string>
+    <string name="Instructions">Instructions</string>
+    <string name="Instructions0">Easily deposit checks from wherever you are, using your mobile device.</string>
+    <string name="Instructions1">Once you have installed MobiCheck on your mobile device, you will be able to deposit all your checks using the mobile device.</string>
+    <string name="Instructions2">The MobiCheck application will activate the rear camera on your mobile device and guide you through the next steps. Point the camera at the front face of the check and the application will provide hints on how to best position the camera to capture an optimal image. Once the optimal position has been obtained the application will snap the picture automatically. You will be asked to repeat this process to snap a picture of the back of the check as well.</string>
+    <string name="IntroToMobiCheck">Introduction to MobiCheck</string>
+    <string name="Left">Left:</string>
+    <string name="Login">Login</string>
+    <string name="Logout">Logout</string>
+    <string name="LowerLeft">Lower Left:</string>
+    <string name="LowerRight">Lower Right:</string>
+    <string name="MICR">MICR</string>
+    <string name="MRZ">MRZ</string>
+    <string name="MandatoryAccount">Please choose an account</string>
+    <string name="MandatoryAmount">Please enter check amount</string>
+    <string name="MandatoryEmailPassword">Please enter identifier or password</string>
+    <string name="Menu">Menu</string>
+    <string name="NeverShowInfoScreen">"Never show again"</string>
+    <string name="OCRA">OCRA</string>
+    <string name="OCRType">OCR Type</string>
+    <string name="OK">OK</string>
+    <string name="PAN">PAN</string>
+    <string name="Passport">Passport</string>
+    <string name="Password">Password</string>
+    <string name="Payment">Payment</string>
+    <string name="Payment_text">Bill Payment</string>
+    <string name="PleaseTypeCredentails">Please type your credentials to login</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="Reference">Reference</string>
+    <string name="Retry">Retry</string>
+    <string name="Right">Right:</string>
+    <string name="Send">Send</string>
+    <string name="SendCheckConfirm">Are you sure you want to deposit the check now?</string>
+    <string name="Settings">Settings</string>
+    <string name="ShowCase">TISShowCase</string>
+    <string name="SignOff">Sign Off</string>
+    <string name="Skew">Skew</string>
+    <string name="Skip">Skip</string>
+    <string name="SoftCaptureThresholdLabel">Soft Capture </string>
+    <string name="SoftCaptureThresholdValue">Threshold: %.2f/1.0</string>
+    <string name="Spots">Spots</string>
+    <string name="Status">Status</string>
+    <string name="StatusError">Error</string>
+    <string name="StatusNA">Not Available</string>
+    <string name="StatusPending">Pending</string>
+    <string name="StatusSent">Sent</string>
+    <string name="StatusSuccessful">Successful</string>
+    <string name="TISAccessibilityCancelButton">cancel button</string>
+    <string name="TISAccessibilityTorchButton">flash button</string>
+    <string name="TISBinType">Binarization Type </string>
+    <string name="TISCallingAppActivityName">com.topimagesystems.ui.ViewPagerFragmentActivity</string>
+    <string name="TISCheckBinarization">Check</string>
+    <string name="TISErrorBlurFail">The image detected as blurry, please try taking the picture again</string>
+    <string name="TISErrorDeviceMemory">Memory Exception</string>
+    <string name="TISErrorImageGeneral">There was an error while processing the image, please capture the image again</string>
+    <string name="TISErrorNotValidBoundaries">Document boundaries detected are not in an acceptable size, please capture the document again</string>
+    <string name="TISFlowCancel">Cancel</string>
+    <string name="TISFlowCancelCaptureButton">Cancel</string>
+    <string name="TISFlowCancelMultiCapture">Finish</string>
+    <string name="TISFlowCapture">capture</string>
+    <string name="TISFlowDigitalRowNotInScope">The Check account details are invalid. Please retake the photo while the Check is aligned correctly within the frame</string>
+    <string name="TISFlowErrorCarbonStrip">We detected carbon strip on the image, please make sure the check is valid and there is no bright light at specific location on the check</string>
+    <string name="TISFlowErrorFileTooSmall">The image created is not in a valid size, please try taking the picture again in a place with less light</string>
+    <string name="TISFlowErrorHorizontalStreaks">We detected invalid horizontal lines on the image, please make sure the check is valid and there is no bright light at specific location on the check</string>
+    <string name="TISFlowErrorIQACornerData">We detected that one of the corner may be folded. please make sure the check is lying flat on the surface</string>
+    <string name="TISFlowErrorIQADarkness">The picture captured is too dark, please try taking the picture in a place with more light</string>
+    <string name="TISFlowErrorIQAEdgeData">We detected that one of the edges is torn or missing. please make sure the check is complete</string>
+    <string name="TISFlowErrorIQANumSpots">There is too much noise on the picture as taken, please try taking the picture in a place with more light</string>
+    <string name="TISFlowErrorIQASkew">The picture captured is over skewed. Please try to capture again while the angles are straight within the frame</string>
+    <string name="TISFlowErrorImageContrast">We couldn\'t  read the image details. Please make sure there is enough light</string>
+    <string name="TISFlowErrorMicrLength">We couldn\'t read the account details from the check. Please retake the photo while the check is aligned correctly within the frame.</string>
+    <string name="TISFlowErrorMinImageDimensions">The image created is not in valid dimensions, please try taking the picture again</string>
+    <string name="TISFlowErrorNoValidBoundingBox">We couldn\'t process the image as captured. Please try capturing the documnet again</string>
+    <string name="TISFlowErrorNotValidImageSize">The image created is not in a valid size, please try taking the picture again in a place with less light</string>
+    <string name="TISFlowErrorPiggyBack">We detected check on top of other check, please make sure the check is valid and try again</string>
+    <string name="TISFlowErrorReading">Error Reading</string>
+    <string name="TISFlowErrorReadingImageGeneral">Error Reading</string>
+    <string name="TISFlowErrorReadingMaxTries">We still having difficulties reading the Check, Do you agree to send the Check as captured?</string>
+    <string name="TISFlowErrorReadingOCRMessage">We couldn\'t read the details from the image.</string>
+    <string name="TISFlowErrorUnknown">There was an error while validating the picture taken, please try taking the picture again</string>
+    <string name="TISFlowFailedToOpenCamera">failed to open camera - check camera is not open by other application</string>
+    <string name="TISFlowFailedToOpenResources">Missing Resources</string>
+    <string name="TISFlowFinish">finish</string>
+    <string name="TISFlowIindicatorZoomOut">Move Higher</string>
+    <string name="TISFlowIndicatorAlign">Hold over the document</string>
+    <string name="TISFlowIndicatorAlignFlat">Hold Flat</string>
+    <string name="TISFlowIndicatorAlignFlatDescription">Hold Flat, rotate if needed</string>
+    <string name="TISFlowIndicatorDown">Move towards Bottom of document</string>
+    <string name="TISFlowIndicatorHold">HOLD STILL</string>
+    <string name="TISFlowIndicatorLeft">Move left</string>
+    <string name="TISFlowIndicatorLight">Poor lighting, turn on the flash</string>
+    <string name="TISFlowIndicatorRight">Move right</string>
+    <string name="TISFlowIndicatorRotateLeft">Align with the frame corners</string>
+    <string name="TISFlowIndicatorRotateRight">Align with the frame corners</string>
+    <string name="TISFlowIndicatorScanBarcode">Searching for Barcode</string>
+    <string name="TISFlowIndicatorTop">Move towards Top of document</string>
+    <string name="TISFlowIndicatorZoomIn">Move Lower</string>
+    <string name="TISFlowInfoScreenButtonCaption">"Close"</string>
+    <string name="TISFlowInfoScreenCheckBoxCaption">Never show again</string>
+    <string name="TISFlowMicrInterrupted">We suspect that the MICR line is interrupted with signeture or something else.</string>
+    <string name="TISFlowMultiCaptureTitle">MobiFLOW Message</string>
+    <string name="TISFlowOK">OK</string>
+    <string name="TISFlowPerformingOCR">"" <!-- Performing OCR&#8230; -->
+    </string>
+    <string name="TISFlowPleaseCaptureCheckBack">Please capture the back of the check</string>
+    <string name="TISFlowPleaseCaptureCheckFront">Please capture the front face of the check</string>
+    <string name="TISFlowPleaseCaptureImageBack">Please capture the back of the document</string>
+    <string name="TISFlowPleaseCaptureImageFront">Please capture the front face of the document</string>
+    <string name="TISFlowPleaseCaptureTheBarcode">Please capture the barcode</string>
+    <string name="TISFlowPreparingForServerBinarizing">Preparing image: Binarizing image…</string>
+    <string name="TISFlowPreparingForServerLocatingBoundaries">"" <!-- Preparing image: Locating boundaries&#8230; -->
+    </string>
+    <string name="TISFlowPreparingImage">Preparing Image…</string>
+    <string name="TISFlowProcessingImage">Processing Image…</string>
+    <string name="TISFlowStaticIndicator">Position the image here and we\'ll capture the information</string>
+    <string name="TISFlowValidatingImage">Validating Image…</string>
+    <string name="TISFlowWarningMICRDetectedOnCheckBack">We have detected the front face of the check being captured instead of the back. Please turn the check to its other side</string>
+    <string name="TISGeneralBinarization">General</string>
+    <string name="TISInfoScreenText"> Having problems?\n
+-          Make sure the check and background are in contrast.\n
+-          Make sure that you have enough light to capture.\n
+-		   Place the device flat over the check.   
+</string>
+    <string name="TISMultiCaptureShouldContinueCapture">Would you like to capture another page?</string>
+    <string name="TISProcessing">Processing…</string>
+    <string name="TISSuccessfulReadingTitle">Successful Reading</string>
+    <string name="TISVersion">4.0.5SP2</string>
+    <string name="TisCapture">Capture</string>
+    <string name="Top">Top:</string>
+    <string name="UnknownMicr">Unknown</string>
+    <string name="UpperLeft">Upper left:</string>
+    <string name="UpperRight">Upper Right:</string>
+    <string name="Username">User Name</string>
+    <string name="WhatisMobiCheck">What is MobiCheck?</string>
+    <string name="Width">width:</string>
+    <string name="YouShouldAgreeToTerms">You should agree to the terms of service to login</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">MobiFlow</string>
+    <string name="area">area:</string>
+    <string name="aspectRatioMax">Aspect Ratio Max</string>
+    <string name="aspectRatioMin">Aspect Ratio Min</string>
+    <string name="backOnly">Scan Back Only</string>
+    <string name="blurOnBackTxt">Blur on back side</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="confirm">Start Test</string>
+    <string name="counter_font">BOLD</string>
+    <string name="createGrayscale">Show Grayscale Image</string>
+    <string name="customViewTxt">Custom View</string>
+    <string name="debugMode">Debug Mode</string>
+    <string name="description_info">Info</string>
+    <string name="domain">"Domain</string>
+    <string name="dynamicCapture">Dynamic Capture</string>
+    <string name="enableBarcodeDetection">Enable Bar-Code Detection</string>
+    <string name="enableCountDownSoundTxt">Enable Countdown Sound</string>
+    <string name="enableIQA">Enable IQA</string>
+    <string name="enableMaxResolutionCapture">Enable Stills Max Resolution</string>
+    <string name="enableQRCode">Enable QR-Code</string>
+    <string name="enableTapToFocus">Enable Tap To Focus</string>
+    <string name="error">Error</string>
+    <string name="errorDomain">Please enter a valid domain</string>
+    <string name="errorInvalidRange">Not valid range</string>
+    <string name="errorNetworkUnavailable">Network error: failed to establish connection with the server. Make sure your domain is correct and the server is running.</string>
+    <string name="errorPositiveNumber">Please enter a positive number</string>
+    <string name="failedConnectToCamera">Fail to connect to camera service</string>
+    <string name="failedToTakePicture">Failed to take a picture</string>
+    <string name="from">From</string>
+    <string name="frontOnly">Scan Front Only</string>
+    <string name="heigth">Height</string>
+    <string name="hwRatio">Height/Width ratio</string>
+    <string name="ic_indicator_blur">Camera is out of focus</string>
+    <string name="infoScreenTxt">Info Screen Enabled</string>
+    <string name="intro_message">Intro Message</string>
+    <string name="left_right_hint_trashold">0.06</string>
+    <string name="levelerType">Leveler Type</string>
+    <string name="loading">Loading…</string>
+    <string name="manualCaptureMode">Manual Capture</string>
+    <string name="max">max:</string>
+    <string name="maxSpots">max spots:</string>
+    <string name="max_skew">max skew:</string>
+    <string name="maximumRetries">Maximum number of retries</string>
+    <string name="min">min:</string>
+    <string name="move_lower_higher_trashold">0.07</string>
+    <string name="move_top_bottom_document_trashold">0.07</string>
+    <string name="multiCapture">Multi Page</string>
+    <string name="next">Capture</string>
+    <string name="none_levler">none</string>
+    <string name="off">Off</string>
+    <string name="offlineMode">Offline Mode</string>
+    <string name="one_unit_levler">One Unit</string>
+    <string name="picture">Picture</string>
+    <string name="portraitMode">Portrait Mode</string>
+    <string name="scale_levler">Scale</string>
+    <string name="searching_animation_string">SEARCHING</string>
+    <string name="shouldOutputBWImageTxt">Should Output Binary Image</string>
+    <string name="shouldOutputColoredImageTxt">Should Output Colored Image</string>
+    <string name="shouldOutputOriginalImageTxt">Should Output Original Image</string>
+    <string name="showCountDownTxt">Show Countdown</string>
+    <string name="showGuideLinesIndicatorsTxt">Show Guidelines Indicators</string>
+    <string name="showImages">Show Images</string>
+    <string name="showInstructionsSlides">Show Instructions Slides</string>
+    <string name="softCapture">Soft Capture</string>
+    <string name="testMode">Test Mode</string>
+    <string name="title_activity_main_activity_test">InfoScreenActivity</string>
+    <string name="to">To</string>
+    <string name="two_unit_levler">Two Units</string>
+    <string name="txtValidFrom">MICR Length Valid From</string>
+    <string name="txtValidTo">MICR Length Valid To</string>
+    <string name="useEncryption">Use Encryption</string>
+    <string name="usecameraAPI2">Use Camera API2</string>
+    <string name="validLength">Valid length of digital row</string>
+    <string name="videoMode">Video Mode</string>
+    <string name="width">Width</string>
+    <style name="EditTextIQA">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+    <style name="LinearLayoutHalfWidth">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="LinearLayoutInput">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="LinearLayoutTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="TextAppearance.Theme.PlainText" parent="android:TextAppearance.Theme">
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/txtGeneral</item>
+        <item name="android:textSize">@dimen/defaultFontSize</item>
+    </style>
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <item name="vpiCirclePageIndicatorStyle">@style/Widget.CirclePageIndicator</item>
+    </style>
+    <style name="Widget"/>
+    <style name="Widget.CirclePageIndicator" parent="Widget">
+        <item name="centered">@bool/default_circle_indicator_centered</item>
+        <item name="fillColor">@color/default_circle_indicator_fill_color</item>
+        <item name="pageColor">@color/default_circle_indicator_page_color</item>
+        <item name="orientation">@integer/default_circle_indicator_orientation</item>
+        <item name="radius">@dimen/default_circle_indicator_radius</item>
+        <item name="snap">@bool/default_circle_indicator_snap</item>
+        <item name="strokeColor">@color/default_circle_indicator_stroke_color</item>
+        <item name="strokeWidth">@dimen/default_circle_indicator_stroke_width</item>
+    </style>
+    <style name="actionBarTitle" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="btnGeneral">
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">@dimen/btnPadding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_btn_general</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="btnGeneral.actionBar" parent="btnGeneral">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>      
+    </style>
+    <style name="btnGeneral.actionBar.back" parent="btnGeneral.actionBar">        
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <style name="btnGeneral.camera" parent="btnGeneral">
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">@dimen/btnCameraPadding</item>
+    </style>
+    <style name="btnNavMenu" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/btn_nav_menu</item>
+    </style>
+    <style name="customCheckbox">
+        <item name="android:background">@drawable/selector_togglebtn_chk</item>
+        <item name="android:textOn"/>
+        <item name="android:textOff"/>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+    <style name="inputLabeIQA">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="noItemsTitle" parent="TextAppearance.Theme.PlainText">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    <style name="splashBox">
+        <item name="android:background">@drawable/bkg</item>
+    </style>
+    <style name="toggleGeneral">
+        <item name="android:background">@drawable/selector_togglebtn_general</item>
+        <item name="android:textOn"/>
+        <item name="android:textOff"/>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="torchSwitch">
+        <item name="android:background">@drawable/selector_togglebtn_torch</item>
+        <item name="android:textOn"/>
+        <item name="android:textOff"/>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+        
+    </style>
+    <style name="txtBox" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">#767676</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@drawable/txt_box</item>
+    </style>
+    <style name="txtCapture" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/camera_capture_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="txtConfirmation" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="txtDebugBox" parent="android:TextAppearance.Theme">
+        <item name="android:background">@drawable/debug_box</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="txtDebugBox.text" parent="txtDebugBox">
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <style name="txtGreyHead" parent="android:TextAppearance.Theme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:background">#ADB6BE</item>
+        <item name="android:padding">4px</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="txtIntroductionContent" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:maxLines">7</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="txtIntroductionContent.bold" parent="txtIntroductionContent">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="txtIntroductionTitle" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">#d10a2a</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="txtLabel" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="txtLabel.small" parent="txtLabel">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#656565</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="txtLabelIQA" parent="android:TextAppearance.Theme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="txtListItem" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="txtListItem.date" parent="txtListItem">
+        <item name="android:textColor">#929292</item>
+    </style>
+    <style name="txtListItem.status" parent="txtListItem">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#929292</item>
+    </style>
+    <style name="txtProcessing" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="txtRedHead" parent="android:TextAppearance.Theme">
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/nav_menu_bkg_selected</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_margin">2dp</item>
+                <item name="android:padding">2dp</item>
+        
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="txtSplash" parent="TextAppearance.Theme.PlainText">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    <style name="txtSplash.version" parent="txtSplash">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666</item>
+    </style>
+    <style name="txtVersion" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

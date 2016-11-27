@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/startMobiPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="StartMobiPay" />
+
+    <Button
+        android:id="@+id/buttonCheckChecker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="StartMobiCheck" />
+
+    <Button
+        android:id="@+id/startMobA4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="StartMobiA4" />
+
+
+
+    <Button
+        android:id="@+id/captureBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="CaptureBackCheck" />
+
+    <Button
+        android:id="@+id/startShowCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="openShowCase" />
+
+</LinearLayout>

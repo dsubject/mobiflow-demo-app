@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defaultFontSize">20sp</dimen>
+    <dimen name="btnPadding">10dp</dimen>
+    <dimen name="btnCameraPadding">5dp</dimen>
+    <dimen name="actionBarHeight">70dp</dimen>
+    <dimen name="btnActionBarPadding">10dp</dimen>
+    <dimen name="actionBarPadding">10dp</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Integers -->
+    <integer name="customLongAnimation">600</integer>
+    <integer name="videoWidthResolution">0</integer>
+    <integer name="videoHeightResolution">0</integer>
+    <integer name="stillWidthResolution">0</integer>
+    <integer name="stillHeightResolution">0</integer>
+    <integer name="minimumHeightForVideoCapture">1080</integer>
+    <integer name="minimumWidthForVideoCapture">1920</integer>
+    <integer name="dynamicCaptureStrokeWith">3</integer>
+	<integer name="max_barcode_tries">13</integer>
+    <!--integer name="identicalRectsToCapture">3</integer-->
+    
+    <string name="left_right_hint_trashold">0.06</string>
+    <string name="move_lower_higher_trashold">0.07</string>
+    <string name="move_top_bottom_document_trashold">0.07</string>
+    <!--string name="videoFrameRectFoundAR">0.8</string-->
+    <!--string name="prevRectToCurrentAR">0.9</string-->
+
+
+</resources>

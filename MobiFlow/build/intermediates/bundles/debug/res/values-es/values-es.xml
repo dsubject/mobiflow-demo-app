@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="InstructionDelayMill">7000</integer>
+    <integer name="customLongAnimation">600</integer>
+    <string name="Back">espalda</string>
+    <string name="Camera">Cámara</string>
+    <string name="CloseInfoScreenButton">"cerrar"</string>
+    <string name="Done">Hecho</string>
+    <string name="Edit">Editar</string>
+    <string name="NeverShowInfoScreen">"No mostrar de nuevo"</string>
+    <string name="OK">ACEPTAR</string>
+    <string name="Settings">Configuración</string>
+    <string name="Skip">Skip</string>
+    <string name="SuccesfullReading">Lectura correcta</string>
+    <string name="TISErrorInializeOCR">Failed to initialize OCR</string>
+    <string name="TISErrorNotValidBoundaries">Check boundaries detected are not in an acceptable size, please capture the check again</string>
+    <string name="TISFlowCancelCaptureButton">Cancelar</string>
+    <string name="TISFlowDigitalRowNotInScope">Fila digital no es en el ·mbito de aplicaciÛn predefinido. øTe gustarÌa intentar tomar otra foto? </string>
+    <string name="TISFlowErrorFileTooSmall">La imagen creada no es un tamaño válido, por favor intente tomar la imagen en un lugar con menos luz</string>
+    <string name="TISFlowErrorIQACornerData">Se detectó que uno de los rincones se pueden plegar por favor asegúrese de que el cheque está en posición horizontal en la superficie.</string>
+    <string name="TISFlowErrorIQADarkness">La imagen capturada es demasiado oscura, por favor, trate de tomar la foto en un lugar con más luz</string>
+    <string name="TISFlowErrorIQAEdgeData">Se detectó que uno de los bordes está roto o faltante, por favor asegúrese de que el cheque se ha completado.</string>
+    <string name="TISFlowErrorIQANumSpots">No hay demasiado ruido en la imagen, tomado, por favor, trate de tomar la foto en un lugar con más luz</string>
+    <string name="TISFlowErrorIQASkew">La imagen capturada se sesgada sobre Intente capturar de nuevo, mientras que los ángulos son rectos dentro del marco.</string>
+    <string name="TISFlowErrorNoValidBoundingBox">We couldn\'t process the check as captured. Please try capturing the check again</string>
+    <string name="TISFlowErrorNotValidImageSize">La imagen creada no es un tamaño válido, por favor intente tomar la imagen en un lugar con menos luz</string>
+    <string name="TISFlowErrorReading">Error de lectura</string>
+    <string name="TISFlowErrorReadingCheck">Los datos de verificaciÛn no podÌa leerse, por favor, consulte instrucciones para obtener m·s detalles. øTe gustarÌa intentar tomar otra foto?</string>
+    <string name="TISFlowErrorReadingMaxTrials">Seguimos teniendo dificultades para leer el cheque, ¿Está de acuerdo para enviar el cheque como capturado?</string>
+    <string name="TISFlowErrorUnknown">Se produjo un error al validar la foto, por favor, intente tomar la imagen</string>
+    <string name="TISFlowIindicatorZoomOut">alejar</string>
+    <string name="TISFlowIndicatorAlign">mantener la plana dispositivo sobre el control</string>
+    <string name="TISFlowIndicatorDown">bajar</string>
+    <string name="TISFlowIndicatorHold">mantener</string>
+    <string name="TISFlowIndicatorLeft">mover hacia la izquierda</string>
+    <string name="TISFlowIndicatorLight">no hay suficiente luz tratar de flash abierto</string>
+    <string name="TISFlowIndicatorRight">mover hacia la derecha</string>
+    <string name="TISFlowIndicatorRotateLeft">Girar a la izquierda</string>
+    <string name="TISFlowIndicatorTop">subir</string>
+    <string name="TISFlowIndicatorZoomIn">zoom</string>
+    <string name="TISFlowOK">OK</string>
+    <string name="TISFlowPleaseCaptureCheckBack">Por favor captura el reverso del cheque</string>
+    <string name="TISFlowPleaseCaptureCheckFront">Por favor captura la cara frontal de la verificaciÛn</string>
+    <string name="TISFlowPleaseWait">Please Wait…</string>
+    <string name="TISFlowPreparingForServerBinarizing">PreparaciÛn de imagen: Binarizing imagen…</string>
+    <string name="TISFlowPreparingForServerCropping">PreparaciÛn de imagen: recorte de imagen…</string>
+    <string name="TISFlowPreparingForServerLocatingBoundaries">PreparaciÛn de imagen: localizar lÌmites…</string>
+    <string name="TISFlowPreparingImage">Preparar imagen…</string>
+    <string name="TISFlowValidatingImag">Validar imagen…</string>
+    <string name="TISInfoScreenText"> Having problems?\n
+-          Make sure the check and background are in contrast.\n
+-          Check you have enough light to capture.\n
+-			xyz indicators can assist you to hold the device flat over the check   
+</string>
+    <string name="TISProcessing">TransformaciÛn…</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ic_indicator_blur">cámara está desenfocada</string>
+    <string name="ic_indicator_rotate_right_camera">Girar a la derecha</string>
+    <string name="title_activity_main_activity_test">InfoScreenActivity</string>
+    <string name="version">Version %1$s</string>
+</resources>

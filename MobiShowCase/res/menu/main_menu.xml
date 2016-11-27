@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/Settings"/>
+    <item
+        android:id="@+id/instructions"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="About"/>
+      <item
+        android:id="@+id/feedback"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="Feedback"/>
+</menu>

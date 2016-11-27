@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.atos.mobiflow.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Capture"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Submit"/>
+
+    <ImageView
+        android:id="@+id/img_preview"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="400px" />
+
+</LinearLayout>

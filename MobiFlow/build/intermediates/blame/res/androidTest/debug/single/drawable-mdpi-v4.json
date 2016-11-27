@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\accepted_icon.png",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\accepted_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\passport_overlay.png",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\passport_overlay.png"
+    }
+]

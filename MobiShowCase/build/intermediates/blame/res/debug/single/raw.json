@@ -1,0 +1,450 @@
+[
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz21.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz21.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan22.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan22.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan36.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan36.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask3.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask3.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz35.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz35.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\digits_masks.csv",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\digits_masks.csv"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan19.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan19.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz2.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz2.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\blur_detect_full.yml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\blur_detect_full.yml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan21.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan21.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan3.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan3.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz34.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz34.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz18.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz18.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask2.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask2.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\signs_masks.csv",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\signs_masks.csv"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan35.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan35.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan2.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan2.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan6o.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan6o.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz19.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz19.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz16.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz16.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan5.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan5.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz1.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz1.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan33.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan33.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan23n.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan23n.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz32.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz32.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan17.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan17.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan11.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan11.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan10.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan10.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan16.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan16.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz15.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz15.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan5o.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan5o.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan4.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan4.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan1.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan1.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan29.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan29.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan7.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan7.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz31.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz31.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz25.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz25.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz28.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz28.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz22.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz22.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan22n.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan22n.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask13.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask13.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz5.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz5.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan17n.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan17n.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask1.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask1.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan20.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan20.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz8.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz8.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask4.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask4.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan11n.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan11n.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan26.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan26.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan23.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan23.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask7.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask7.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask9.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask9.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan28.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan28.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz27.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz27.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan14.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan14.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask12.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask12.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz7.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz7.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan30.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan30.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan9.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan9.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz30.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz30.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan13.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan13.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz26.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz26.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz12.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz12.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask8.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask8.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\beep_android.mp3",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\beep_android.mp3"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan28n.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan28n.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask11.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask11.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz6.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz6.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\blur_detect.yml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\blur_detect.yml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan32.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan32.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\img_digit_and_abc.jpg",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\img_digit_and_abc.jpg"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan27.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan27.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocra_masks.csv",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocra_masks.csv"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan8.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan8.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\big_img_mrz_abc.jpg",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\big_img_mrz_abc.jpg"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz10.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz10.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz13.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz13.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan_data.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan_data.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan11_n.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan11_n.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz24.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz24.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan25.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan25.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz4.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz4.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask0.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask0.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask6.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask6.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask15.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask15.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\big_img_mrz_digit.jpg",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\big_img_mrz_digit.jpg"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz29.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz29.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan6.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan6.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz23.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz23.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan24.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan24.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz9.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz9.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan0.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan0.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\barcode_digits_masks.csv",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\barcode_digits_masks.csv"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask5.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask5.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\ocr_mask14.png",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\ocr_mask14.png"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz3.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz3.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan18.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan18.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz14.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz14.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan12.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan12.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz_data.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz_data.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz11.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz11.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz0.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz0.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan8o.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan8o.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz20.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz20.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz17.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz17.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan31.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan31.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan1o.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan1o.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz33.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz33.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan34.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan34.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\mrz36.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\mrz36.xml"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\barcode_signs_masks.csv",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\barcode_signs_masks.csv"
+    },
+    {
+        "merged": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\res\\merged\\debug\\raw\\pan15.xml",
+        "source": "C:\\MobiFlow\\MobiShowCase\\build\\intermediates\\exploded-aar\\MobiFlow\\MobiFlow\\unspecified\\res\\raw\\pan15.xml"
+    }
+]

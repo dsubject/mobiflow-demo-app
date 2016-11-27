@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="hdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="4604303126582200"
+    token="-1821855923740469256"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="1523" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="638" />
+    <task
+        name="verifier"
+        duration="363" />
+
+    <artifact
+        location="C:\MobiFlow\MobiShowCase\build\outputs\apk\MobiShowCase-armeabi-v7a-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="4604303126582200"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\MobiFlow\MobiShowCase\build\outputs\apk\MobiShowCase-armeabi-v7a-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

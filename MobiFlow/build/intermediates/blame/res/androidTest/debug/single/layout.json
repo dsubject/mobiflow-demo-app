@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mbck_camera_layout.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\mbck_camera_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\run_ocr_library.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\run_ocr_library.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\custom_mbck_camera_layout.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\custom_mbck_camera_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\viewpaper_layout.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\viewpaper_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mbck_camera_manager_layout.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\mbck_camera_manager_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_camera.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\info_screen.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\info_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dynmaic_capture_overlay.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\dynmaic_capture_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\custom_mbck_camera_manager_layout.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\custom_mbck_camera_manager_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mbck_help_page_layout.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\mbck_help_page_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mbck_main_camera.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\layout\\mbck_main_camera.xml"
+    }
+]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/intro_bg" >
+     <com.topimagesystems.ui.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"        
+        android:layout_alignParentBottom="true"      
+         android:background="@color/transparent" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_above="@+id/indicator"
+        android:background="@android:color/transparent" >
+    </android.support.v4.view.ViewPager>
+
+   
+
+</RelativeLayout>

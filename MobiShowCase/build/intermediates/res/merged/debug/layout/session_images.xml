@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff444444">
+
+    <GridView
+        android:id="@+id/sessionImagesGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="20dp"
+        android:drawSelectorOnTop="true"
+        android:stretchMode="columnWidth">
+    </GridView>
+   
+
+</LinearLayout>

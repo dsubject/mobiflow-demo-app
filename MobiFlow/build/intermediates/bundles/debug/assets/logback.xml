@@ -1,0 +1,13 @@
+<configuration debug='true'>
+	<appender name='FILE' class='ch.qos.logback.core.FileAppender'>
+		<file>top.log</file>
+		<append>true</append>
+		<encoder>
+			<pattern>%-4r [%t] %-5p %c{35} - %m%n</pattern>
+		</encoder>
+	</appender>
+	<logger name='com.topimagesystems' level='DEBUG' />
+	<root level='DEBUG'>
+		<appender-ref ref='FILE' />
+	</root>
+</configuration>

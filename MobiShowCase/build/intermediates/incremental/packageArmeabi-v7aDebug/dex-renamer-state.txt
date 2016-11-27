@@ -1,0 +1,7 @@
+#Sat Nov 26 21:15:25 GMT 2016
+base.0=C\:\\MobiFlow\\MobiShowCase\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_94713097c91f436224f5c783f0e6a12ac51d18ea
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\MobiFlow\\MobiShowCase\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_2026c9f6e4301d1581a0c561aa80a97efc504022\\classes.dex
+base.1=C\:\\MobiFlow\\MobiShowCase\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_2026c9f6e4301d1581a0c561aa80a97efc504022
+file.0=C\:\\MobiFlow\\MobiShowCase\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_94713097c91f436224f5c783f0e6a12ac51d18ea\\classes.dex

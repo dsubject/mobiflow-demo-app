@@ -1,0 +1,1014 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkg" >
+
+    <include
+        android:id="@+id/demoActionBar_ref"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar" />
+
+    <!-- content -->
+
+    <ScrollView
+        android:id="@+id/scrollBox"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/demoActionBar_ref"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/txtRedHead"
+                android:text="@string/Corner" />
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="@string/Front" />
+
+            <LinearLayout style="@style/LinearLayoutTitle" >
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/UpperLeft" />
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/UpperRight" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/CFULW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/CFURW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/CFULH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/CFURH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/CFULA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/CFURA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutTitle" >
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/LowerLeft" />
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/LowerRight" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/CFLLW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/CFLRW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/CFLLH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/CFLRH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/CFLLA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/CFLRA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="@string/Back" />
+
+            <LinearLayout style="@style/LinearLayoutTitle" >
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/UpperLeft" />
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/UpperRight" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/CBULW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/CBURW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/CBULH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/CBURH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/CBURA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/CBULA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutTitle" >
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/LowerLeft" />
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/LowerRight" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/CBLLW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/CBLRW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/CBLLH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/CBLRH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/CBLLA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/CBLRA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtRedHead"
+                android:text="@string/Edge" />
+
+            <LinearLayout style="@style/LinearLayoutTitle" >
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/Top" />
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/Bottom" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/ETW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/EBW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/ETH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/EBH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/ETA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/EBA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutTitle" >
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/Left" />
+
+                <TextView
+                    style="@style/txtLabelIQA"
+                    android:text="@string/Right" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/ELW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Width" />
+
+                    <EditText
+                        android:id="@+id/ERW"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/ELH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/Height" />
+
+                    <EditText
+                        android:id="@+id/ERH"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/ELA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:text="@string/area" />
+
+                    <EditText
+                        android:id="@+id/ERA"
+                        style="@style/EditTextIQA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtRedHead"
+                android:text="@string/Skew" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/max_skew" />
+
+                <EditText
+                    android:id="@+id/MAXSKEW"
+                    style="@style/EditTextIQA"
+                    android:layout_width="100dp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtRedHead"
+                android:text="@string/Darkness" />
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="@string/Front" />
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:layout_width="40dp"
+                        android:text="@string/min" />
+
+                    <EditText
+                        android:id="@+id/DFMin"
+                        style="@style/EditTextIQA"
+                        android:layout_width="90dp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:layout_width="40dp"
+                        android:text="@string/max" />
+
+                    <EditText
+                        android:id="@+id/DFMax"
+                        style="@style/EditTextIQA"
+                        android:layout_width="90dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="@string/Back" />
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:layout_width="40dp"
+                        android:text="@string/min" />
+
+                    <EditText
+                        android:id="@+id/DBMin"
+                        style="@style/EditTextIQA"
+                        android:layout_width="90dp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:layout_width="40dp"
+                        android:text="@string/max" />
+
+                    <EditText
+                        android:id="@+id/DBMax"
+                        style="@style/EditTextIQA"
+                        android:layout_width="90dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtRedHead"
+                android:text="@string/Spots" />
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="@string/Front" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/maxSpots" />
+
+                <EditText
+                    android:id="@+id/SFmaxSpots"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="@string/Back" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/maxSpots" />
+
+                <EditText
+                    android:id="@+id/SBmaxSpots"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+            
+ 			<TextView
+                style="@style/txtRedHead"
+                android:text="@string/ImageFilesize" />
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="@string/Front" />
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:layout_width="40dp"
+                        android:text="@string/min" />
+
+                    <EditText
+                        android:id="@+id/imagesizeFrontMin"
+                        style="@style/EditTextIQA"
+                        android:layout_width="90dp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:layout_width="40dp"
+                        android:text="@string/max" />
+
+                    <EditText
+                        android:id="@+id/imagesizeFrontMax"
+                        style="@style/EditTextIQA"
+                        android:layout_width="90dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="@string/Back" />
+
+            <LinearLayout style="@style/LinearLayoutInput" >
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:layout_width="40dp"
+                        android:text="@string/min" />
+
+                    <EditText
+                        android:id="@+id/imagesizeBackMin"
+                        style="@style/EditTextIQA"
+                        android:layout_width="90dp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayoutHalfWidth" >
+
+                    <TextView
+                        style="@style/inputLabeIQA"
+                        android:layout_width="40dp"
+                        android:text="@string/max" />
+
+                    <EditText
+                        android:id="@+id/imagesizeBackMax"
+                        style="@style/EditTextIQA"
+                        android:layout_width="90dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/txtRedHead"
+                android:text="Horizontal Streaks And Carbon Strip" />
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="Front (Horizontal Streaks)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Sum of black pixels threshold" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/horizSreakSumPixels"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:numeric="integer"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Threshold line width" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/horizSreakLineWidth"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Number of lines to detect" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/horizSreakNumLines"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtGreyHead"
+                android:text="Back (Carbon Strip)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Sum of black pixels threshold" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/carbonStripSumPixels"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Threshold line width" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/carbonStripLineWidth"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Number of lines to detect" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/carbonStripNumLines"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtRedHead"
+                android:text="Piggy back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Max Piggyback Height" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/piggyBackHeight"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Max Piggyback Width" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/piggyBackDistance"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Max Piggyback AspectRatio" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/piggyBackLocation"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:text="Min Piggyback AspectRatio" />
+
+                <EditText
+                    android:layout_gravity="left"
+                    android:id="@+id/piggyMinAR"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+
+
+            <!-- carbon & front -->
+
+
+
+
+            <Button
+                android:id="@+id/iqaBtnConfirm"
+                style="@style/btnGeneral"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/confirm" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

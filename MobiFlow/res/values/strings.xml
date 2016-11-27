@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="TISFlowPleaseCaptureCheckFront">Please capture the front face of the check</string>        
+    <string name="TISFlowPleaseCaptureCheckBack">Please capture the back of the check</string>
+    <string name="TISFlowPleaseCaptureImageBack">Please capture the back of the document</string>    
+    <string name="TISFlowPleaseCaptureTheBarcode">Please capture the barcode</string>
+    
+
+    <!-- labels -->
+    <string name="TISFlowOK">OK</string>
+    <string name="TISFlowCancelCaptureButton">Cancel</string>
+    <string name="TISFlowCancel">Cancel</string>
+    <string name="TISFlowCancelMultiCapture">Finish</string>    
+    <string name="TISFlowPleaseCaptureImageFront">Please capture the front face of the document</string>           
+    
+    <!-- accessibility -->
+    <string name="TISAccessibilityTorchButton">flash button</string>
+    <string name="TISAccessibilityCancelButton">cancel button</string>
+
+    <!-- Buttons -->    
+    <string name="TISSuccessfulReadingTitle">Successful Reading</string>
+    
+
+    <string name="TISFlowMultiCaptureTitle">MobiFLOW Message</string>
+    <string name="TISMultiCaptureShouldContinueCapture">Would you like to capture another page?</string>
+    <string name="TISFlowFinish">finish</string>
+    <string name="TISFlowCapture">capture</string>
+    <string name="TISFlowDigitalRowNotInScope">The Check account details are invalid. Please retake the photo while the Check is aligned correctly within the frame</string>
+    <string name="TISFlowPreparingForServerLocatingBoundaries">"" <!-- Preparing image: Locating boundaries&#8230; -->
+    </string>
+    <string name="TISFlowPreparingForServerBinarizing">Preparing image: Binarizing image&#8230;</string>
+       
+    <string name="TISFlowErrorReadingMaxTries">We still having difficulties reading the Check, Do you agree to send the Check as captured?</string>
+    <string name="TISFlowErrorMicrLength">We couldn\'t read the account details from the check. Please retake the photo while the check is aligned correctly within the frame.</string>
+    
+    <string name="CloseInfoScreenButton">"Close"</string>
+    <string name="NeverShowInfoScreen">"Never show again"</string>
+    <string name="TISFlowInfoScreenButtonCaption">"Close"</string>
+    <string name="TISFlowInfoScreenCheckBoxCaption">Never show again</string>
+     <string name="TISFlowErrorReadingImageGeneral">Error Reading</string>
+     <string name="TISFlowErrorImageContrast">We couldn\'t  read the image details. Please make sure there is enough light</string>
+    
+     <!-- Notification meesages not presents on the UI -->
+    <string name="TISProcessing">Processing&#8230;</string>
+    <string name="TISFlowPreparingImage">Preparing Image&#8230;</string>
+    <string name="TISFlowProcessingImage">Processing Image&#8230;</string>
+    <string name="TISFlowValidatingImage">Validating Image&#8230;</string>
+    <string name="TISFlowPerformingOCR">"" <!-- Performing OCR&#8230; -->
+    </string>
+
+    <!-- send check -->
+    <string name="Confirmation">Confirmation</string>
+    <string name="next">Capture</string>
+    <!--  -->
+
+    <!-- camera ocr error meesages -->
+    <string name="TISErrorNotValidBoundaries">Document boundaries detected are not in an acceptable size, please capture the document again</string>
+    <string name="TISErrorImageGeneral">There was an error while processing the image, please capture the image again</string>
+    <string name="TISErrorDeviceMemory">Memory Exception</string>
+    <string name="TISFlowErrorNoValidBoundingBox">We couldn\'t process the image as captured. Please try capturing the documnet again</string>
+    <string name="TISFlowErrorNotValidImageSize">The image created is not in a valid size, please try taking the picture again in a place with less light</string>
+    <string name="TISFlowErrorUnknown">There was an error while validating the picture taken, please try taking the picture again</string>
+    <string name="TISErrorBlurFail">The image detected as blurry, please try taking the picture again</string>
+    <string name="TISFlowErrorIQACornerData">We detected that one of the corner may be folded. please make sure the check is lying flat on the surface</string>
+    <string name="TISFlowErrorIQAEdgeData">We detected that one of the edges is torn or missing. please make sure the check is complete</string>
+    <string name="TISFlowErrorIQASkew">The picture captured is over skewed. Please try to capture again while the angles are straight within the frame</string>
+    <string name="TISFlowErrorIQADarkness">The picture captured is too dark, please try taking the picture in a place with more light</string>
+    <string name="TISFlowErrorIQANumSpots">There is too much noise on the picture as taken, please try taking the picture in a place with more light</string>
+    <string name="TISFlowErrorMinImageDimensions">The image created is not in valid dimensions, please try taking the picture again</string>
+    <string name="TISFlowErrorHorizontalStreaks">We detected invalid horizontal lines on the image, please make sure the check is valid and there is no bright light at specific location on the check</string>
+    <string name="TISFlowErrorCarbonStrip">We detected carbon strip on the image, please make sure the check is valid and there is no bright light at specific location on the check</string>
+    <string name="TISFlowErrorPiggyBack">We detected check on top of other check, please make sure the check is valid and try again</string>
+
+
+    <string name="TISFlowErrorFileTooSmall">The image created is not in a valid size, please try taking the picture again in a place with less light</string>
+    <string name="TISFlowMicrInterrupted">We suspect that the MICR line is interrupted with signeture or something else.</string>    
+    <string name="TISFlowErrorReadingOCRMessage">We couldn\'t read the details from the image.</string>
+    <string name="TISFlowWarningMICRDetectedOnCheckBack">We have detected the front face of the check being captured instead of the back. Please turn the check to its other side</string>
+    
+    <!-- camera errors -->
+
+    <string name="TISFlowFailedToOpenCamera">failed to open camera - check camera is not open by other application</string>
+    <string name="TISFlowFailedToOpenResources">Missing Resources</string>
+
+    <!-- Indicator text -->
+
+    <string name="TISFlowIndicatorTop">Move towards Top of document</string>
+    <string name="TISFlowIndicatorDown">Move towards Bottom of document</string>
+    <string name="TISFlowIndicatorLeft">Move left</string>
+    <string name="TISFlowIndicatorRight">Move right</string>
+    <string name="TISFlowIndicatorHold">HOLD STILL</string>
+    <string name="TISFlowIndicatorAlign">Hold over the document</string>
+    <string name="TISFlowIndicatorAlignFlat">Hold Flat</string>
+    <string name="TISFlowIndicatorAlignFlatDescription">Hold Flat, rotate if needed</string>
+    <string name="TISFlowIndicatorRotateLeft">Align with the frame corners</string>
+    <string name="TISFlowIndicatorRotateRight">Align with the frame corners</string>
+    <string name="TISFlowIndicatorZoomIn">Move Lower</string>
+    <string name="TISFlowIindicatorZoomOut">Move Higher</string>
+    <string name="TISFlowIndicatorLight">Poor lighting, turn on the flash</string>
+    <string name="TISFlowStaticIndicator">Position the image here and we\'ll capture the information</string>
+    <string name="TISFlowIndicatorScanBarcode">Searching for Barcode</string>
+    <string name="ic_indicator_blur">Camera is out of focus</string>
+    <string name="TISFlowErrorReading">Error Reading</string>
+
+
+
+
+
+    <string name="TISCallingAppActivityName">com.topimagesystems.ui.ViewPagerFragmentActivity</string>
+    <string name="picture">Picture</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="description_info">Info</string>
+    <string name="intro_message">Intro Message</string>
+
+
+
+
+    <!-- Info screen Text -->
+    <string name="TISInfoScreenText"> Having problems?\n
+-          Make sure the check and background are in contrast.\n
+-          Make sure that you have enough light to capture.\n
+-		   Place the device flat over the check.   
+</string>
+    <string name="TISVersion">4.0.5SP2</string>
+    <!-- Integers -->
+
+    <string name="title_activity_main_activity_test">InfoScreenActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="counter_font">BOLD</string>
+    <string name="searching_animation_string">SEARCHING</string>
+
+</resources>
