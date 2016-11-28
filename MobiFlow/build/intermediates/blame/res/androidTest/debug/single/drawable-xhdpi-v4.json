@@ -56,12 +56,12 @@
         "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_intro_globe.png"
     },
     {
-        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\bkg.png",
-        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\bkg.png"
-    },
-    {
         "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_intro_infinite.png",
         "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_intro_infinite.png"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\bkg.png",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\bkg.png"
     },
     {
         "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_info.png",

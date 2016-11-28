@@ -10,15 +10,20 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.topimagesystems.Common.*;
 import com.topimagesystems.controllers.imageanalyze.CameraController;
+import com.topimagesystems.controllers.imageanalyze.CameraManagerController;
 import com.topimagesystems.controllers.imageanalyze.CameraManagerController.TISMobiFlowMessages;
 import com.topimagesystems.controllers.imageanalyze.CameraTypes.*;
 import com.topimagesystems.data.SessionResultParams;
@@ -27,7 +32,6 @@ import com.topimagesystems.intent.CaptureIntent;
 import com.topimagesystems.intent.CaptureIntent.*;
 import com.topimagesystems.util.OcrValidationUtils;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -40,36 +44,83 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
 import java.util.HashMap;
 
 
 public class MainActivity extends AppCompatActivity implements TISMobiFlowMessages {
 
+    /* Define String constants for image types */
     final String COLOUR_FRONT = "COLOUR_FRONT";
     final String GREYSCALE_FRONT = "GREYSCALE_FRONT";
     final String JPEG_BW_FRONT = "JPEG_BW_FRONT";
     final String ORIGINAL_FRONT = "ORIGINAL_FRONT";
     final String TIFF_FRONT = "TIFF_FRONT";
 
-    final TISLicenseParameters tisLicenseParameters = new TISLicenseParameters(
-            "Atos",
-            "01e9d6ae-a17e-4f32-b418-a309a309f41e",
-            "peDToXFikcFVh8JnzJA9fpgOh6z6hYoSkAOePh7KMmFwOrkNMb8iHKtK4jRuy6Ip1vcOrKzmXK6MomYt+Ve1xA=="
-            );
+    /* Define String constants for document types */
+    final String CARD = "CARD";
+    final String PASSPORT = "PASSPORT";
+    final String FULL_PAGE = "FULL_PAGE";
+    final String PAYMENT = "PAYMENT";
+    final String CHEQUE = "CHEQUE";
 
+    /* MobiFlow License Details */
+    /*
+    final TISLicenseParameters tisLicenseParameters = new TISLicenseParameters(
+        "Atos",
+        "01e9d6ae-a17e-4f32-b418-a309a309f41e",
+        "peDToXFikcFVh8JnzJA9fpgOh6z6hYoSkAOePh7KMmFwOrkNMb8iHKtK4jRuy6Ip1vcOrKzmXK6MomYt+Ve1xA=="
+    );
+    */
+    final TISLicenseParameters tisLicenseParameters = new TISLicenseParameters(
+        "Atos",
+        "de12c436-c0f1-43f9-bbc2-a644810d09e3",
+        "Np/POefAOkid1uy+yxfK4ywMSThUs+tVZnMy51DntaB6z5moFh7hPEghUCWTP05yOCe+S0IFIZ9XPwqFIjXt7Q=="
+    );
+
+    /* Data structure for captured images */
     private HashMap<String,byte[]> image_data = new HashMap<String,byte[]>();
 
+    /* Variables for input fields */
+    private Spinner  docType;
     private EditText caseRef;
     private EditText custId;
     private EditText empId;
 
+    private String docTypeString = CARD;
+
+    /* Routine to flush any image data */
     private void resetImageData() {
         image_data = new HashMap<String,byte[]>();
     }
+
+    // Methods for handling the ActionBar Menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.action_bar_menu, menu);
+        return true;
+    }
+
+    public void onRefreshAction(MenuItem mi) {
+        resetImageData();
+        docType.setId(0);
+        caseRef.getText().clear();
+        custId.getText().clear();
+        empId.getText().clear();
+        updateImagePreview(new HashMap<String, byte[]>());
+    }
+
+    public void onSettingsAction(MenuItem mi) {
+        // TODo
+        Intent settings = new Intent(this, SettingsActivity.class);
+        startActivity(settings);
+    }
+
+    // END
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +130,7 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.action_bar);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         CameraController.registerListener(this);
 
@@ -89,10 +141,12 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
             StrictMode.setThreadPolicy(policy);
         }
 
+        docType = (Spinner)  findViewById(R.id.doc_type);
         caseRef = (EditText) findViewById(R.id.case_ref);
         custId  = (EditText) findViewById(R.id.cust_id);
         empId   = (EditText) findViewById(R.id.emp_id);
 
+        // Add events to UI controls
         final Button btn_submit = (Button) this.findViewById(R.id.btn_submit);
         btn_submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -104,17 +158,43 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
         btn_capture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CaptureIntent ci = new CaptureIntent(MainActivity.this);
-                CardParams input = (CaptureIntent.CardParams) ci.getCaptureParams(CaptureIntent.TISDocumentType.CARD);
-                input.documnetType = CaptureIntent.TISDocumentType.CARD;
-                input.showGuidelinesIndicators = true;
-                input.scanFrontOnly = true;
-                input.uxType = TISFlowUXType.STATIC;
-                input.ocrType = OCRType.OFF;
-                input.license = tisLicenseParameters;
-                ci.captureDocument(input);
+            CaptureIntent ci = new CaptureIntent(MainActivity.this);
+            ci.captureDocument(getCaptureParams(ci));
             }
         });
+
+        docType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                switch(position) {
+                    case 0: //CARD
+                        docTypeString = CARD;
+                        break;
+                    case 1: //PASSPORT
+                        docTypeString = PASSPORT;
+                        break;
+                    case 2: //FULL PAGE
+                        docTypeString = FULL_PAGE;
+                        break;
+                    case 3: //PAYMENT
+                        docTypeString = PAYMENT;
+                        break;
+                    case 4: //CHEQUE
+                        docTypeString = CHEQUE;
+                        break;
+                    default:
+                        docTypeString = CARD;
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                docTypeString = CARD;
+            }
+        });
+
+        // END OF onCreate()
     }
 
     @Override
@@ -127,33 +207,110 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
     @Override
     protected void onActivityResult( int requestCode, int resultCode, Intent data) {
 
-        SessionResultParams result = CaptureIntent.parseActivityResult(requestCode, resultCode, data);
+        switch(resultCode) {
+            case RESULT_OK:
+                SessionResultParams result = CaptureIntent.parseActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == CaptureIntent.MOBI_FLOW_REQUEST_CODE) {
-            Log.e("onActivityResult", String.valueOf(resultCode));
-            switch (resultCode) {
-                case RESULT_OK:
-                    resetImageData();
-                    image_data.put(COLOUR_FRONT, SessionResultParams.colorFront);
-                    image_data.put(GREYSCALE_FRONT, SessionResultParams.grayscaleFront);
-                    image_data.put(JPEG_BW_FRONT, SessionResultParams.jpegBWFront);
-                    image_data.put(ORIGINAL_FRONT, SessionResultParams.originalFront);
-                    image_data.put(TIFF_FRONT, SessionResultParams.tiffFront);
-                    updateImagePreview(image_data);
-                    break;
+                if (requestCode == CaptureIntent.MOBI_FLOW_REQUEST_CODE) {
+                    Log.e("onActivityResult", String.valueOf(resultCode));
+                    switch (resultCode) {
+                        case RESULT_OK:
+                            resetImageData();
+                            image_data.put(COLOUR_FRONT, SessionResultParams.colorFront);
+                            image_data.put(GREYSCALE_FRONT, SessionResultParams.grayscaleFront);
+                            image_data.put(JPEG_BW_FRONT, SessionResultParams.jpegBWFront);
+                            image_data.put(ORIGINAL_FRONT, SessionResultParams.originalFront);
+                            image_data.put(TIFF_FRONT, SessionResultParams.tiffFront);
+                            updateImagePreview(image_data);
+                            break;
 
-                default:
-                    break;
-            }
+                        default:
+                            break;
+                    }
+                }
+                break;
+
+            case RESULT_CANCELED:
+                break;
+
+            case CameraManagerController.RESULT_CAMERA_PERMISSION_ACSSES_DENIED:
+                Toast.makeText(getApplicationContext(), "Camera Permission Access Denied!", Toast.LENGTH_LONG).show();
+                break;
+
+            case CameraManagerController.RESULT_CANCELED_FROM_ALERT:
+                break;
+
+            case CameraManagerController.RESULT_CLOSE_SESSION:
+                break;
+
+            case CameraManagerController.RESULT_LIBRARY_ERROR:
+                String libraryErrMsg = "MobiFlow Library Error: " + data.getStringExtra(CaptureIntent.MOBIFLOW_ERROR_DETAILS);
+                Toast.makeText(getApplicationContext(), libraryErrMsg, Toast.LENGTH_LONG).show();
+                break;
+
+            case CameraManagerController.RESULT_LICENSE_INVALID:
+                String licenseErrMsg = "MobiFlow License Error: " + data.getStringExtra(CaptureIntent.MOBIFLOW_ERROR_DETAILS);
+                Toast.makeText(getApplicationContext(), licenseErrMsg, Toast.LENGTH_LONG).show();
+                break;
+
+            default:
+                break;
         }
 
         super.onActivityResult(requestCode, resultCode, data);
         CameraController.unregisterListener();
     }
 
+    private baseCaptureParams getCaptureParams(CaptureIntent ci) {
+
+        // Establish a default
+        baseCaptureParams input = ci.getCaptureParams(TISDocumentType.CARD);
+
+        // Use the UI Spinner to change the Document Type for scanning
+        switch (docType.getSelectedItemPosition()) {
+            case 0: // CARD
+                input = ci.getCaptureParams(TISDocumentType.CARD);
+                input.documnetType = TISDocumentType.CARD;
+                break;
+            case 1: // PASSPORT
+                input = ci.getCaptureParams(TISDocumentType.CUSTOM);
+                input.documnetType = TISDocumentType.CUSTOM;
+                input.minHeightWidthAspectRatio = 0.6f;
+                input.maxHeightWidthAspectRatio = 0.8f;
+                break;
+            case 2: // FULL PAGE
+                input = ci.getCaptureParams(TISDocumentType.FULL_PAGE);
+                input.documnetType = TISDocumentType.FULL_PAGE;
+                break;
+            case 3: // PAYMENT
+                input = ci.getCaptureParams(TISDocumentType.PAYMENT);
+                input.documnetType = TISDocumentType.PAYMENT;
+                break;
+            case 4: // CHEQUE
+                input = ci.getCaptureParams(TISDocumentType.CHECK);
+                input.documnetType = TISDocumentType.CHECK;
+                break;
+            default:
+                input = ci.getCaptureParams(TISDocumentType.CARD);
+                input.documnetType = TISDocumentType.CARD;
+                break;
+        }
+
+        // Set other defaults
+        CameraManagerController.levlerType = LevelerType.ONE_UNIT;
+        input.showGuidelinesIndicators = true;
+        input.scanFrontOnly = true;
+        input.uxType = TISFlowUXType.STATIC;
+        input.ocrType = OCRType.OFF;
+        input.useMaxResolution = true;
+        input.license = tisLicenseParameters;
+
+        return input;
+    }
+
     private void doSubmit(View v) {
-        //final String cdcUrl = "http://mobiflow-photo-upload.apps.eu01.cf.canopy-cloud.com/jaxrs/uploadimage";
-        final String cdcUrl = "http://csms-demo.atos.io/rome/uploadimage";
+
+        final String DATA_URL = ((MyApplication) getApplication()).getDataUrl();
 
         final String CASE_REF = "case_ref";
         final String CUST_ID = "customer_id";
@@ -163,9 +320,12 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
         try
         {
             DefaultHttpClient client = new DefaultHttpClient();
-            HttpPost post = new HttpPost(cdcUrl);
+            HttpPost post = new HttpPost(DATA_URL);
 
             byte[] image = image_data.get(COLOUR_FRONT);//getTestPhotoData();
+
+            byte[] testImg = Arrays.copyOfRange(image,0,2);
+            String hexStr = Utils.bytesToHex(testImg);
 
             MultipartEntityBuilder entityBuilder = MultipartEntityBuilder.create();
             entityBuilder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
@@ -173,7 +333,7 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
             entityBuilder.addTextBody(CASE_REF, caseRef.getText().toString());
             entityBuilder.addTextBody(CUST_ID, custId.getText().toString());
             entityBuilder.addTextBody(EMP_ID, empId.getText().toString());
-            entityBuilder.addBinaryBody(FILE, image, ContentType.create("image/jpg"), COLOUR_FRONT+".jpg");
+            entityBuilder.addBinaryBody(FILE, image, ContentType.create("image/jpeg"), docTypeString+".jpg");
 
             HttpEntity entity = entityBuilder.build();
             //post.addHeader("Content-Type","multipart/form-data");
@@ -188,6 +348,7 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
         catch(Exception e)
         {
             e.printStackTrace();
+            Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -220,7 +381,8 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
         }
 
         ImageView preview = (ImageView) findViewById(R.id.img_preview);
-        byte[] rawImage = dataMap.get(COLOUR_FRONT);
+        byte[] rawImage = new byte[0];
+        if (dataMap != null && dataMap.size() > 0 ) rawImage = dataMap.get(COLOUR_FRONT);
         Bitmap image = BitmapFactory.decodeByteArray(rawImage,0,rawImage.length);
         preview.setImageBitmap(image);
     }

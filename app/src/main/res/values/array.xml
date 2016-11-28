@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="docTypes">
+        <item>CARD</item>
+        <item>PASSPORT</item>
+        <item>FULL PAGE</item>
+        <item>PAYMENT</item>
+        <item>CHEQUE</item>
+    </string-array>
+</resources>

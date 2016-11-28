@@ -20,12 +20,12 @@
         "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_btn_torch.xml",
-        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_btn_torch.xml"
-    },
-    {
         "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\list_bkg.xml",
         "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable\\list_bkg.xml"
+    },
+    {
+        "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_btn_torch.xml",
+        "source": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_btn_torch.xml"
     },
     {
         "merged": "C:\\Users\\uk09531\\AndroidStudioProjects\\MobiFlow\\MobiFlow\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\accepted_icon.png",
