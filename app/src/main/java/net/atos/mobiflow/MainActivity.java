@@ -115,7 +115,6 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
     }
 
     public void onSettingsAction(MenuItem mi) {
-        // TODo
         Intent settings = new Intent(this, SettingsActivity.class);
         startActivity(settings);
     }
@@ -131,8 +130,6 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
         getSupportActionBar().setCustomView(R.layout.action_bar);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
-        CameraController.registerListener(this);
 
         int SDK_INT = android.os.Build.VERSION.SDK_INT;
         if (SDK_INT > 8)
@@ -158,6 +155,7 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
         btn_capture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+            CameraController.registerListener(MainActivity.this);
             CaptureIntent ci = new CaptureIntent(MainActivity.this);
             ci.captureDocument(getCaptureParams(ci));
             }
@@ -206,55 +204,46 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
 
     @Override
     protected void onActivityResult( int requestCode, int resultCode, Intent data) {
+        if(requestCode == CaptureIntent.MOBI_FLOW_REQUEST_CODE) {
+            Log.e("onActivityResult", String.valueOf(resultCode));
+            switch (resultCode) {
+                case RESULT_OK:
+                    resetImageData();
+                    SessionResultParams result = CaptureIntent.parseActivityResult(requestCode, resultCode, data);
+                    image_data.put(COLOUR_FRONT, result.colorFront);
+                    //image_data.put(GREYSCALE_FRONT, SessionResultParams.grayscaleFront);
+                    //image_data.put(JPEG_BW_FRONT, SessionResultParams.jpegBWFront);
+                    //image_data.put(ORIGINAL_FRONT, SessionResultParams.originalFront);
+                    //image_data.put(TIFF_FRONT, SessionResultParams.tiffFront);
+                    updateImagePreview(image_data);
+                    break;
 
-        switch(resultCode) {
-            case RESULT_OK:
-                SessionResultParams result = CaptureIntent.parseActivityResult(requestCode, resultCode, data);
+                case RESULT_CANCELED:
+                    break;
 
-                if (requestCode == CaptureIntent.MOBI_FLOW_REQUEST_CODE) {
-                    Log.e("onActivityResult", String.valueOf(resultCode));
-                    switch (resultCode) {
-                        case RESULT_OK:
-                            resetImageData();
-                            image_data.put(COLOUR_FRONT, SessionResultParams.colorFront);
-                            image_data.put(GREYSCALE_FRONT, SessionResultParams.grayscaleFront);
-                            image_data.put(JPEG_BW_FRONT, SessionResultParams.jpegBWFront);
-                            image_data.put(ORIGINAL_FRONT, SessionResultParams.originalFront);
-                            image_data.put(TIFF_FRONT, SessionResultParams.tiffFront);
-                            updateImagePreview(image_data);
-                            break;
+                case CameraManagerController.RESULT_CAMERA_PERMISSION_ACSSES_DENIED:
+                    Toast.makeText(getApplicationContext(), "Camera Permission Access Denied!", Toast.LENGTH_LONG).show();
+                    break;
 
-                        default:
-                            break;
-                    }
-                }
-                break;
+                case CameraManagerController.RESULT_CANCELED_FROM_ALERT:
+                    break;
 
-            case RESULT_CANCELED:
-                break;
+                case CameraManagerController.RESULT_CLOSE_SESSION:
+                    break;
 
-            case CameraManagerController.RESULT_CAMERA_PERMISSION_ACSSES_DENIED:
-                Toast.makeText(getApplicationContext(), "Camera Permission Access Denied!", Toast.LENGTH_LONG).show();
-                break;
+                case CameraManagerController.RESULT_LIBRARY_ERROR:
+                    String libraryErrMsg = "MobiFlow Library Error: " + data.getStringExtra(CaptureIntent.MOBIFLOW_ERROR_DETAILS);
+                    Toast.makeText(getApplicationContext(), libraryErrMsg, Toast.LENGTH_LONG).show();
+                    break;
 
-            case CameraManagerController.RESULT_CANCELED_FROM_ALERT:
-                break;
+                case CameraManagerController.RESULT_LICENSE_INVALID:
+                    String licenseErrMsg = "MobiFlow License Error: " + data.getStringExtra(CaptureIntent.MOBIFLOW_ERROR_DETAILS);
+                    Toast.makeText(getApplicationContext(), licenseErrMsg, Toast.LENGTH_LONG).show();
+                    break;
 
-            case CameraManagerController.RESULT_CLOSE_SESSION:
-                break;
-
-            case CameraManagerController.RESULT_LIBRARY_ERROR:
-                String libraryErrMsg = "MobiFlow Library Error: " + data.getStringExtra(CaptureIntent.MOBIFLOW_ERROR_DETAILS);
-                Toast.makeText(getApplicationContext(), libraryErrMsg, Toast.LENGTH_LONG).show();
-                break;
-
-            case CameraManagerController.RESULT_LICENSE_INVALID:
-                String licenseErrMsg = "MobiFlow License Error: " + data.getStringExtra(CaptureIntent.MOBIFLOW_ERROR_DETAILS);
-                Toast.makeText(getApplicationContext(), licenseErrMsg, Toast.LENGTH_LONG).show();
-                break;
-
-            default:
-                break;
+                default:
+                    break;
+            }
         }
 
         super.onActivityResult(requestCode, resultCode, data);
@@ -273,10 +262,8 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
                 input.documnetType = TISDocumentType.CARD;
                 break;
             case 1: // PASSPORT
-                input = ci.getCaptureParams(TISDocumentType.CUSTOM);
-                input.documnetType = TISDocumentType.CUSTOM;
-                input.minHeightWidthAspectRatio = 0.6f;
-                input.maxHeightWidthAspectRatio = 0.8f;
+                input = ci.getCaptureParams(TISDocumentType.CARD);
+                input.documnetType = TISDocumentType.CARD;
                 break;
             case 2: // FULL PAGE
                 input = ci.getCaptureParams(TISDocumentType.FULL_PAGE);
@@ -303,6 +290,9 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
         input.uxType = TISFlowUXType.STATIC;
         input.ocrType = OCRType.OFF;
         input.useMaxResolution = true;
+        input.outputBinarizedImage=false;
+        input.outputGrayscaleImage=false;
+        input.outputOriginalImage=false;
         input.license = tisLicenseParameters;
 
         return input;
@@ -444,6 +434,10 @@ public class MainActivity extends AppCompatActivity implements TISMobiFlowMessag
 
     @Override
     public void onMobiFlowErrorMessageReceived(TISFlowErrorMessage error, Object[] objects, Context context) {
+        if (error == null) {
+            //create an 'uknown' error
+            error = TISFlowErrorMessage.ERROR_GENERAL_FAIL;
+        }
         // get Error messages from the library.
         Log.e("MobiFlowErrorMessage","TISFlowErrorMessage"+ error.name().toString());
         CaptureIntent.callbackReturnMessage returnMessage = CameraController.getManagerListener();
